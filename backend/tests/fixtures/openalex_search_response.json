@@ -1,0 +1,58 @@
+{
+  "meta": {"count": 1},
+  "results": [
+    {
+      "id": "https://openalex.org/W123456789",
+      "doi": "https://doi.org/10.1234/example",
+      "display_name": "Hybrid Retrieval with BM25 and Dense Vectors",
+      "publication_year": 2024,
+      "publication_date": "2024-06-01",
+      "type": "article",
+      "cited_by_count": 42,
+      "abstract_inverted_index": {
+        "Hybrid": [0],
+        "retrieval": [1],
+        "combines": [2],
+        "bm25": [3],
+        "and": [4],
+        "dense": [5],
+        "vectors.": [6]
+      },
+      "authorships": [
+        {
+          "author": {
+            "id": "https://openalex.org/A123",
+            "display_name": "Ada Researcher",
+            "orcid": "https://orcid.org/0000-0000-0000-0001"
+          },
+          "institutions": [
+            {"display_name": "Example University"}
+          ]
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C999",
+          "display_name": "Information retrieval",
+          "score": 0.92
+        }
+      ],
+      "primary_location": {
+        "landing_page_url": "https://example.org/paper",
+        "source": {
+          "display_name": "Journal of Retrieval",
+          "host_organization_name": "Example Press"
+        }
+      },
+      "biblio": {
+        "volume": "12",
+        "issue": "3",
+        "first_page": "10",
+        "last_page": "25"
+      },
+      "open_access": {
+        "oa_url": "https://example.org/paper.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1285 @@
+{
+  "research_id": "ace17688-5faa-46c7-a8b3-6bb3e79cde64",
+  "question": "how should my personal lab can combine personal hybrid search with agent workflows ?",
+  "created_at": "2026-10-06T18:36:32.438515Z",
+  "plan": {
+    "original_question": "how should my personal lab can combine personal hybrid search with agent workflows ?",
+    "research_objective": "Identify and compare approaches for integrating hybrid search mechanisms (combining vector-based and keyword-based retrieval) with LLM-driven agent workflows in a personal AI lab setting.",
+    "sub_questions": [
+      "What are the core components and design patterns of hybrid search systems?",
+      "How do existing agent workflow frameworks (e.g., AutoGPT, LangChain agents, BabyAGI) incorporate external retrieval?",
+      "What techniques exist for coupling hybrid search outputs with agent reasoning loops (e.g., retrieval-augmented generation, tool-use, memory augmentation)?",
+      "What evaluation metrics and benchmarks are used to assess the effectiveness of hybrid search‑agent integrations?",
+      "What practical considerations (compute, latency, data privacy, maintenance) arise when deploying such systems in a personal lab environment?"
+    ],
+    "search_queries": [
+      "hybrid search vector keyword retrieval",
+      "LLM agent retrieval augmented generation",
+      "tool use agents with hybrid retrieval",
+      "retrieval-augmented agent workflow survey",
+      "personal AI lab hybrid search agent implementation"
+    ],
+    "required_sources": [
+      "arxiv",
+      "openalex"
+    ],
+    "expected_evidence": [
+      "peer-reviewed papers on hybrid retrieval methods",
+      "articles describing agent frameworks with retrieval capabilities",
+      "benchmark datasets and evaluation studies for retrieval-augmented agents",
+      "open-source code repositories demonstrating hybrid search‑agent integration",
+      "tutorials or blog posts detailing deployment in small-scale settings"
+    ],
+    "research_strategy": "1. Define scope: focus on recent (last 3 years) literature on hybrid search and agent workflows. 2. Query arxiv and openalex using the prepared search queries, collect titles/abstracts. 3. Filter for relevance to hybrid search + agent integration. 4. Extract key architectures, coupling mechanisms, and evaluation results from selected papers. 5. Survey open-source implementations on platforms like GitHub to identify practical patterns. 6. Synthesize findings into a comparative table of approaches, highlighting strengths, weaknesses, and resource requirements. 7. Outline a step‑by‑step prototype plan for a personal lab, including data preparation, hybrid index building, agent tool integration, and evaluation protocol. 8. Document limitations and future work directions."
+  },
+  "sources": [
+    {
+      "source": "arxiv",
+      "title": "arxiv",
+      "external_id": null,
+      "url": null
+    },
+    {
+      "source": "openalex",
+      "title": "openalex",
+      "external_id": null,
+      "url": null
+    },
+    {
+      "source": "arxiv",
+      "title": "The Retrieval Effectiveness of Web Search Engines: Considering Results Descriptions",
+      "external_id": "1511.05800",
+      "url": "https://arxiv.org/abs/1511.05800v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Blended RAG: Improving RAG (Retriever-Augmented Generation) Accuracy with Semantic Search and Hybrid Query-Based Retrievers",
+      "external_id": "2404.07220",
+      "url": "https://arxiv.org/abs/2404.07220v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "Quotient Space-Based Keyword Retrieval in Sponsored Search",
+      "external_id": "2105.12371",
+      "url": "https://arxiv.org/abs/2105.12371v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "A Generalized Vector Space Model for Ontology-Based Information Retrieval",
+      "external_id": "1807.07779",
+      "url": "https://arxiv.org/abs/1807.07779v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Multi-keyword multi-click advertisement option contracts for sponsored search",
+      "external_id": "1307.4980",
+      "url": "https://arxiv.org/abs/1307.4980v7"
+    },
+    {
+      "source": "openalex",
+      "title": "Hybrid Retrieval-Augmented Generation (RAG) Systems with Embedding Vector Databases",
+      "external_id": "W4408985588",
+      "url": "https://doi.org/10.32628/cseit25112702"
+    },
+    {
+      "source": "openalex",
+      "title": "Authenticated Keyword Search in Scalable Hybrid-Storage Blockchains",
+      "external_id": "W3176377144",
+      "url": "https://doi.org/10.1109/icde51399.2021.00091"
+    },
+    {
+      "source": "openalex",
+      "title": "Temporal-Textual Retrieval: Time and Keyword Search in Web Documents",
+      "external_id": "W2296444412",
+      "url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.402.2853"
+    },
+    {
+      "source": "openalex",
+      "title": "Hybrid Search in the context of second-hand online marketplaces",
+      "external_id": "W7172585153",
+      "url": "http://hdl.handle.net/10362/204381"
+    },
+    {
+      "source": "openalex",
+      "title": "An Adaptation of the Vector-Space Model for Ontology-Based Information Retrieval",
+      "external_id": "W2108347737",
+      "url": "https://doi.org/10.1109/tkde.2007.22"
+    },
+    {
+      "source": "arxiv",
+      "title": "AR-RAG: Autoregressive Retrieval Augmentation for Image Generation",
+      "external_id": "2506.06962",
+      "url": "https://arxiv.org/abs/2506.06962v3"
+    },
+    {
+      "source": "arxiv",
+      "title": "Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation",
+      "external_id": "2504.13684",
+      "url": "https://arxiv.org/abs/2504.13684v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augmented Generation",
+      "external_id": "2411.18583",
+      "url": "https://arxiv.org/abs/2411.18583v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Factually: Exploring Wearable Fact-Checking for Augmented Truth Discernment",
+      "external_id": "2504.17204",
+      "url": "https://arxiv.org/abs/2504.17204v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "A Collaborative Multi-Agent Approach to Retrieval-Augmented Generation Across Diverse Data",
+      "external_id": "2412.05838",
+      "url": "https://arxiv.org/abs/2412.05838v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Retrieval-Augmented Generation and LLM Agents for Biomimicry Design Solutions",
+      "external_id": "W4398160786",
+      "url": "https://doi.org/10.1609/aaaiss.v3i1.31210"
+    },
+    {
+      "source": "openalex",
+      "title": "MALADE: Orchestration of LLM-powered Agents with Retrieval Augmented Generation for Pharmacovigilance",
+      "external_id": "W4406489787",
+      "url": "http://arxiv.org/abs/2408.01869"
+    },
+    {
+      "source": "openalex",
+      "title": "SCMRAG: Self-Corrective Multihop Retrieval Augmented Generation System for LLM Agents",
+      "external_id": "W7124297238",
+      "url": "https://doi.org/10.65109/wjjv5555"
+    },
+    {
+      "source": "openalex",
+      "title": "Social Intelligence Enhancement Methods for LLM Agents Based on Retrieval-Augmented Generation",
+      "external_id": "W4407456038",
+      "url": "https://doi.org/10.1109/cac63892.2024.10865026"
+    },
+    {
+      "source": "openalex",
+      "title": "Smart Manufacturing Enabled By LLM AI Agents and Retrieval-Augmented Generation",
+      "external_id": "W7214912650",
+      "url": "https://doi.org/10.5644/pi2026.225.04"
+    },
+    {
+      "source": "arxiv",
+      "title": "Retrieval Models Aren't Tool-Savvy: Benchmarking Tool Retrieval for Large Language Models",
+      "external_id": "2503.01763",
+      "url": "https://arxiv.org/abs/2503.01763v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "AIRCC-Clim: a user-friendly tool for generating regional probabilistic climate change scenarios and risk measures",
+      "external_id": "2111.01762",
+      "url": "https://arxiv.org/abs/2111.01762v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "LLandMark: A Multi-Agent Framework for Landmark-Aware Multimodal Interactive Video Retrieval",
+      "external_id": "2603.02888",
+      "url": "https://arxiv.org/abs/2603.02888v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Overcoming low-utility facets for complex answer retrieval",
+      "external_id": "1811.08772",
+      "url": "https://arxiv.org/abs/1811.08772v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Beyond Semantic Similarity: Performance and Costs of Agentic Retrieval for Complex Tasks",
+      "external_id": "2610.05750",
+      "url": "https://arxiv.org/abs/2610.05750v1"
+    },
+    {
+      "source": "openalex",
+      "title": "HARP: Agentic Hybrid Retrieval and Analysis for Long-Form Audio",
+      "external_id": "W7213269582",
+      "url": "https://arxiv.org/abs/2609.14116"
+    },
+    {
+      "source": "openalex",
+      "title": "Securing the Agent: Vendor-Neutral, Multitenant Enterprise Retrieval and Tool Use",
+      "external_id": "W7160692720",
+      "url": "https://doi.org/10.1145/3786335.3813145"
+    },
+    {
+      "source": "openalex",
+      "title": "ReAct Modular Agent: Orchestrating Tool-Use and Retrieval for Financial Workflows",
+      "external_id": "W7117479235",
+      "url": "https://doi.org/10.58190/icisna.2025.138"
+    },
+    {
+      "source": "openalex",
+      "title": "UniDocVerse: A Multi-Tenant, Multi-Vertical Document Intelligence Platform with ReAct Agents and Hybrid Retrieval",
+      "external_id": "W7202160026",
+      "url": "https://doi.org/10.5281/zenodo.21880387"
+    },
+    {
+      "source": "openalex",
+      "title": "vstash: Local-First Hybrid Retrieval with Adaptive Fusion for LLM Agents",
+      "external_id": "W7154975610",
+      "url": "https://arxiv.org/abs/2604.15484"
+    },
+    {
+      "source": "arxiv",
+      "title": "A Survey of Multi-Agent Deep Reinforcement Learning with Communication",
+      "external_id": "2203.08975",
+      "url": "https://arxiv.org/abs/2203.08975v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG",
+      "external_id": "2501.09136",
+      "url": "https://arxiv.org/abs/2501.09136v4"
+    },
+    {
+      "source": "arxiv",
+      "title": "A rich bounty of AGN in the 9 square degree Bootes survey: high-z obscured AGN and large-scale structure",
+      "external_id": "0611654v1",
+      "url": "https://arxiv.org/abs/astro-ph/0611654v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG",
+      "external_id": "W4406542750",
+      "url": "http://arxiv.org/abs/2501.09136"
+    },
+    {
+      "source": "openalex",
+      "title": "From Retrieval to Action: A Survey of Agentic Retrieval-augmented Generation",
+      "external_id": "W7213206708",
+      "url": "https://doi.org/10.2139/ssrn.7428138"
+    },
+    {
+      "source": "openalex",
+      "title": "Graph Retrieval-Augmented Generation: A Survey",
+      "external_id": "W4403589311",
+      "url": "http://arxiv.org/abs/2408.08921"
+    },
+    {
+      "source": "openalex",
+      "title": "Retrieval-Augmented Generation in Biomedicine: A Survey of Technologies, Datasets, and Clinical Applications",
+      "external_id": "W4417313874",
+      "url": "https://doi.org/10.21203/rs.3.rs-8330917/v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Synthetic Data Generation Using CTGAN with Agentic Workflows and Retrieval-Augmented Generation",
+      "external_id": "W4417025982",
+      "url": "https://doi.org/10.34190/icair.5.1.4280"
+    },
+    {
+      "source": "arxiv",
+      "title": "Claw AI Lab: An Autonomous Multi-Agent Research Team",
+      "external_id": "2605.22662",
+      "url": "https://arxiv.org/abs/2605.22662v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Faith in AI can narrow the futures individuals consider",
+      "external_id": "2603.28944",
+      "url": "https://arxiv.org/abs/2603.28944v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "DocArena: Turning Raw Documents into Controllable Training Environments for Document Search Agents",
+      "external_id": "2606.26122",
+      "url": "https://arxiv.org/abs/2606.26122v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "The New Shape of Search: How Conversational AI Recomposes Information Seeking",
+      "external_id": "2607.04282",
+      "url": "https://arxiv.org/abs/2607.04282v3"
+    },
+    {
+      "source": "arxiv",
+      "title": "Foundations of GenIR",
+      "external_id": "2501.02842",
+      "url": "https://arxiv.org/abs/2501.02842v1"
+    },
+    {
+      "source": "openalex",
+      "title": "AI Agents vs. Agentic AI: A Conceptual taxonomy, applications and challenges",
+      "external_id": "W4413427262",
+      "url": "https://doi.org/10.1016/j.inffus.2025.103599"
+    },
+    {
+      "source": "openalex",
+      "title": "AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges",
+      "external_id": "W4412505619",
+      "url": "https://doi.org/10.70777/si.v2i3.15161"
+    },
+    {
+      "source": "openalex",
+      "title": "Agentic Lab: An Agentic-physical AI system for cell and organoid experimentation and manufacturing",
+      "external_id": "W4416178376",
+      "url": "https://doi.org/10.1101/2025.11.11.686354"
+    },
+    {
+      "source": "openalex",
+      "title": "Hybrid AI for Explainable and Accurate Conversational Agents in eGovernment",
+      "external_id": "W7172379984",
+      "url": "https://arxiv.org/abs/2608.01346"
+    },
+    {
+      "source": "openalex",
+      "title": "The AI-Atlas: Didactics for Teaching AI and Machine Learning On-Site, Online, and Hybrid",
+      "external_id": "W3176051226",
+      "url": "https://doi.org/10.3390/educsci11070318"
+    },
+    {
+      "source": "arxiv",
+      "title": "A Case-Driven Multi-Agent Framework for E-Commerce Search Relevance",
+      "external_id": "2605.05991",
+      "url": "https://arxiv.org/abs/2605.05991v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Lightweight and Direct Document Relevance Optimization for Generative Information Retrieval",
+      "external_id": "2504.05181",
+      "url": "https://arxiv.org/abs/2504.05181v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "Lost in Decoding? Reproducing and Stress-Testing the Look-Ahead Prior in Generative Retrieval",
+      "external_id": "2604.23396",
+      "url": "https://arxiv.org/abs/2604.23396v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Towards Better Instruction Following Retrieval Models",
+      "external_id": "2505.21439",
+      "url": "https://arxiv.org/abs/2505.21439v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Ragas: Automated Evaluation of Retrieval Augmented Generation",
+      "external_id": "2309.15217",
+      "url": "https://arxiv.org/abs/2309.15217v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "(Towards) Scalable Reliable Automated Evaluation with Large Language Models",
+      "external_id": "2607.28282",
+      "url": "https://arxiv.org/abs/2607.28282v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Symmetries and periodic orbits in simple hybrid Routhian systems",
+      "external_id": "2001.08941",
+      "url": "https://arxiv.org/abs/2001.08941v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Dynamics of Controlled Hybrid Systems of Aerial Cable-Ways",
+      "external_id": "0607200v1",
+      "url": "https://arxiv.org/abs/math/0607200v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "On the Impact of White-box Deployment Strategies for Edge AI on Latency and Model Performance",
+      "external_id": "2411.00907",
+      "url": "https://arxiv.org/abs/2411.00907v3"
+    },
+    {
+      "source": "arxiv",
+      "title": "Incremental Blockwise Beam Search for Simultaneous Speech Translation with Controllable Quality-Latency Tradeoff",
+      "external_id": "2309.11379",
+      "url": "https://arxiv.org/abs/2309.11379v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Ultra-Low Latency for 5G - A Lab Trial",
+      "external_id": "1610.04362",
+      "url": "https://arxiv.org/abs/1610.04362v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "A Tutorial for Evaluating Cure Model Appropriateness",
+      "external_id": "2605.04999",
+      "url": "https://arxiv.org/abs/2605.04999v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "Informed Source Separation: A Bayesian Tutorial",
+      "external_id": "1311.3001",
+      "url": "https://arxiv.org/abs/1311.3001v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "HLSFactory-Agent: Large-Scale Agentic HLS Dataset Construction from Academic and Open-Source Projects",
+      "external_id": "2609.09519",
+      "url": "https://arxiv.org/abs/2609.09519v1"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "67bb47b3-e515-4ee5-a5a8-17502b607f3f",
+      "document_id": "de29108d-f6f5-415f-ae6e-2918557e330a",
+      "chunk_id": "963c916f-722e-4640-b757-7c1f5b2619a3",
+      "source": "sample_research.pdf",
+      "title": "Hybrid Retrieval Notes",
+      "page": 1,
+      "section": "Hybrid Retrieval Notes",
+      "text": "Hybrid Retrieval Notes\n\nIntroduction\n\nThis document describes BM25, dense vectors, and reciprocal rank fusion.\n\nMethods\n\nChunks retain page numbers and section metadata for provenance.",
+      "retrieval_score": -4.5466837882995605,
+      "retrieval_method": "hybrid_rerank",
+      "source_metadata": {
+        "filename": "sample_research.pdf",
+        "source_type": "pdf",
+        "knowledge_scope": "PUBLIC_RESEARCH",
+        "document_kind": "pdf",
+        "project_id": null,
+        "ingestion_timestamp": "2026-10-06T16:11:44.999421+00:00",
+        "processed_path": "/Users/karan_bhosle/Karanverse-personal AI Research Lab/data/processed/de29108d-f6f5-415f-ae6e-2918557e330a"
+      }
+    },
+    {
+      "evidence_id": "994a10a4-3740-4c9e-9999-743428ef007b",
+      "document_id": "de29108d-f6f5-415f-ae6e-2918557e330a",
+      "chunk_id": "963c916f-722e-4640-b757-7c1f5b2619a3",
+      "source": "sample_research.pdf",
+      "title": "Hybrid Retrieval Notes",
+      "page": 1,
+      "section": "Hybrid Retrieval Notes",
+      "text": "Hybrid Retrieval Notes\n\nIntroduction\n\nThis document describes BM25, dense vectors, and reciprocal rank fusion.\n\nMethods\n\nChunks retain page numbers and section metadata for provenance.",
+      "retrieval_score": -4.5466837882995605,
+      "retrieval_method": "hybrid_rerank",
+      "source_metadata": {
+        "filename": "sample_research.pdf",
+        "source_type": "pdf",
+        "knowledge_scope": "PUBLIC_RESEARCH",
+        "document_kind": "pdf",
+        "project_id": null,
+        "ingestion_timestamp": "2026-10-06T16:11:44.999421+00:00",
+        "processed_path": "/Users/karan_bhosle/Karanverse-personal AI Research Lab/data/processed/de29108d-f6f5-415f-ae6e-2918557e330a"
+      }
+    }
+  ],
+  "report": {
+    "question": "how should my personal lab can combine personal hybrid search with agent workflows ?",
+    "executive_summary": "Hybrid retrieval integrates BM25 keyword-based and dense vector semantic retrieval, often combined via reciprocal rank fusion (RRF) to merge results. [1][2] The local evidence base does not provide further details on integration with LLM-driven agent workflows, evaluation metrics, or practical deployment considerations for personal lab environments.",
+    "key_findings": [
+      {
+        "statement": "Hybrid retrieval systems combine BM25 keyword retrieval and dense vector semantic retrieval, with reciprocal rank fusion (RRF) as a method to fuse results from multiple retrievers.",
+        "basis": "evidence",
+        "evidence_ids": [
+          "67bb47b3-e515-4ee5-a5a8-17502b607f3f"
+        ],
+        "citation_labels": [
+          "[1]"
+        ],
+        "confidence": "medium",
+        "uncertainty": null
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "67bb47b3-e515-4ee5-a5a8-17502b607f3f",
+        "citation_label": "[1]",
+        "document_id": "de29108d-f6f5-415f-ae6e-2918557e330a",
+        "chunk_id": "963c916f-722e-4640-b757-7c1f5b2619a3",
+        "title": "Hybrid Retrieval Notes",
+        "excerpt": "Hybrid Retrieval Notes\n\nIntroduction\n\nThis document describes BM25, dense vectors, and reciprocal rank fusion.\n\nMethods\n\nChunks retain page numbers and section metadata for provenance.",
+        "page": 1,
+        "section": "Hybrid Retrieval Notes",
+        "retrieval_score": -4.5466837882995605,
+        "source_filename": "sample_research.pdf"
+      },
+      {
+        "evidence_id": "994a10a4-3740-4c9e-9999-743428ef007b",
+        "citation_label": "[2]",
+        "document_id": "de29108d-f6f5-415f-ae6e-2918557e330a",
+        "chunk_id": "963c916f-722e-4640-b757-7c1f5b2619a3",
+        "title": "Hybrid Retrieval Notes",
+        "excerpt": "Hybrid Retrieval Notes\n\nIntroduction\n\nThis document describes BM25, dense vectors, and reciprocal rank fusion.\n\nMethods\n\nChunks retain page numbers and section metadata for provenance.",
+        "page": 1,
+        "section": "Hybrid Retrieval Notes",
+        "retrieval_score": -4.5466837882995605,
+        "source_filename": "sample_research.pdf"
+      }
+    ],
+    "contradictions": [
+      {
+        "description": "Local evidence does not support claims regarding integration of hybrid search with LLM agent workflows, evaluation metrics, or practical personal lab considerations. The current bundle lacks evidence for agent frameworks, coupling techniques, or deployment guidelines.",
+        "evidence_ids": [
+          "67bb47b3-e515-4ee5-a5a8-17502b607f3f",
+          "994a10a4-3740-4c9e-9999-743428ef007b"
+        ],
+        "citation_labels": [
+          "[1]",
+          "[2]"
+        ],
+        "uncertainty": null
+      }
+    ],
+    "limitations": [
+      "No empirical evidence on hybrid search-agent integration in personal lab settings",
+      "Missing evaluation metrics and benchmarks for retrieval-augmented agents under resource constraints",
+      "Absent practical considerations for compute, latency, data privacy, and maintenance",
+      "Lack of practitioner perspectives or open-source repository examples for end-to-end integration",
+      "Local evidence consists of duplicate excerpts from a sample research PDF with low retrieval scores, indicating limited relevance and depth.",
+      "External papers include a mix of recent arXiv preprints and openalex entries with varying citation counts, suggesting preliminary or heterogeneous quality.",
+      "Claims about how AutoGPT, LangChain agents, or BabyAGI incorporate external retrieval are not supported by the bundle.",
+      "Statements regarding techniques for coupling hybrid search outputs with agent reasoning loops (e.g., retrieval-augmented generation, tool-use, memory augmentation) lack supporting evidence.",
+      "Information on evaluation metrics and benchmarks for assessing hybrid search‑agent integrations is absent.",
+      "Details on practical considerations such as compute, latency, data privacy, and maintenance for personal lab environments are missing.",
+      "Research gap: Empirical studies measuring latency, cost, and accuracy of hybrid search‑agent pipelines under typical personal lab hardware constraints.",
+      "Research gap: Standardized benchmarks or evaluation suites tailored to assessing retrieval‑augmented agent performance in low‑resource scenarios.",
+      "Research gap: Guidelines for balancing retrieval quality with privacy and maintenance overhead when running hybrid search locally.",
+      "Evidence sufficiency: The bundle provides only basic notes on hybrid retrieval components (BM25, dense vectors, reciprocal rank fusion) and lacks evidence on agent workflow frameworks, coupling techniques, evaluation metrics, and practical considerations for personal lab deployment."
+    ],
+    "practical_recommendations": [
+      {
+        "recommendation": "Prototype a hybrid retriever using BM25 and dense vector indices with reciprocal rank fusion, then integrate tool-use loops via an agent framework while monitoring latency and privacy constraints.",
+        "basis": "inference",
+        "evidence_ids": [],
+        "citation_labels": [],
+        "confidence": "low"
+      }
+    ],
+    "open_questions": [
+      "How to integrate BM25/dense vector hybrid retrieval with LLM agent reasoning loops?",
+      "What evaluation metrics and benchmarks assess hybrid search-agent integrations in personal labs?",
+      "What are the compute, latency, and privacy trade-offs for deploying hybrid search-agent systems locally?",
+      "What practitioner guides or open-source templates exist for end-to-end integration?",
+      "How to balance retrieval quality with system efficiency under typical personal lab hardware constraints?",
+      "Practitioner perspectives from blogs or tutorials describing deployment of hybrid search‑agent systems in small‑scale or personal lab settings.",
+      "Open‑source repository examples that demonstrate end‑to‑end integration of hybrid search with agent frameworks.",
+      "Community‑driven best practices or case studies focusing on resource‑constrained implementations.",
+      "How do LangChain agents integrate with hybrid BM25‑dense vector retrievers in practice?",
+      "What are the latency and accuracy trade‑offs when using reciprocal rank fusion versus weighted sum fusion in agent loops?",
+      "Which open‑source libraries provide easy‑to‑use hybrid search APIs suitable for agent tool‑use in a personal lab?",
+      "What evaluation metrics have been used in prior work to measure the effectiveness of retrieval‑augmented agents in resource‑limited settings?"
+    ],
+    "references": [
+      {
+        "reference_id": "evidence:67bb47b3-e515-4ee5-a5a8-17502b607f3f",
+        "reference_type": "local_evidence",
+        "title": "Hybrid Retrieval Notes",
+        "citation_label": "[1]",
+        "evidence_id": "67bb47b3-e515-4ee5-a5a8-17502b607f3f",
+        "external_source": null,
+        "external_id": null,
+        "url": null
+      },
+      {
+        "reference_id": "evidence:994a10a4-3740-4c9e-9999-743428ef007b",
+        "reference_type": "local_evidence",
+        "title": "Hybrid Retrieval Notes",
+        "citation_label": "[2]",
+        "evidence_id": "994a10a4-3740-4c9e-9999-743428ef007b",
+        "external_source": null,
+        "external_id": null,
+        "url": null
+      },
+      {
+        "reference_id": "arxiv:1511.05800",
+        "reference_type": "external_literature",
+        "title": "The Retrieval Effectiveness of Web Search Engines: Considering Results Descriptions",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "1511.05800",
+        "url": "https://arxiv.org/abs/1511.05800v1"
+      },
+      {
+        "reference_id": "arxiv:2404.07220",
+        "reference_type": "external_literature",
+        "title": "Blended RAG: Improving RAG (Retriever-Augmented Generation) Accuracy with Semantic Search and Hybrid Query-Based Retrievers",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2404.07220",
+        "url": "https://arxiv.org/abs/2404.07220v2"
+      },
+      {
+        "reference_id": "arxiv:2105.12371",
+        "reference_type": "external_literature",
+        "title": "Quotient Space-Based Keyword Retrieval in Sponsored Search",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2105.12371",
+        "url": "https://arxiv.org/abs/2105.12371v1"
+      },
+      {
+        "reference_id": "arxiv:1807.07779",
+        "reference_type": "external_literature",
+        "title": "A Generalized Vector Space Model for Ontology-Based Information Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "1807.07779",
+        "url": "https://arxiv.org/abs/1807.07779v1"
+      },
+      {
+        "reference_id": "arxiv:1307.4980",
+        "reference_type": "external_literature",
+        "title": "Multi-keyword multi-click advertisement option contracts for sponsored search",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "1307.4980",
+        "url": "https://arxiv.org/abs/1307.4980v7"
+      },
+      {
+        "reference_id": "openalex:W4408985588",
+        "reference_type": "external_literature",
+        "title": "Hybrid Retrieval-Augmented Generation (RAG) Systems with Embedding Vector Databases",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4408985588",
+        "url": "https://doi.org/10.32628/cseit25112702"
+      },
+      {
+        "reference_id": "openalex:W3176377144",
+        "reference_type": "external_literature",
+        "title": "Authenticated Keyword Search in Scalable Hybrid-Storage Blockchains",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W3176377144",
+        "url": "https://doi.org/10.1109/icde51399.2021.00091"
+      },
+      {
+        "reference_id": "openalex:W2296444412",
+        "reference_type": "external_literature",
+        "title": "Temporal-Textual Retrieval: Time and Keyword Search in Web Documents",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W2296444412",
+        "url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.402.2853"
+      },
+      {
+        "reference_id": "openalex:W7172585153",
+        "reference_type": "external_literature",
+        "title": "Hybrid Search in the context of second-hand online marketplaces",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7172585153",
+        "url": "http://hdl.handle.net/10362/204381"
+      },
+      {
+        "reference_id": "openalex:W2108347737",
+        "reference_type": "external_literature",
+        "title": "An Adaptation of the Vector-Space Model for Ontology-Based Information Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W2108347737",
+        "url": "https://doi.org/10.1109/tkde.2007.22"
+      },
+      {
+        "reference_id": "arxiv:2506.06962",
+        "reference_type": "external_literature",
+        "title": "AR-RAG: Autoregressive Retrieval Augmentation for Image Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2506.06962",
+        "url": "https://arxiv.org/abs/2506.06962v3"
+      },
+      {
+        "reference_id": "arxiv:2504.13684",
+        "reference_type": "external_literature",
+        "title": "Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2504.13684",
+        "url": "https://arxiv.org/abs/2504.13684v1"
+      },
+      {
+        "reference_id": "arxiv:2411.18583",
+        "reference_type": "external_literature",
+        "title": "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augmented Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2411.18583",
+        "url": "https://arxiv.org/abs/2411.18583v1"
+      },
+      {
+        "reference_id": "arxiv:2504.17204",
+        "reference_type": "external_literature",
+        "title": "Factually: Exploring Wearable Fact-Checking for Augmented Truth Discernment",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2504.17204",
+        "url": "https://arxiv.org/abs/2504.17204v1"
+      },
+      {
+        "reference_id": "arxiv:2412.05838",
+        "reference_type": "external_literature",
+        "title": "A Collaborative Multi-Agent Approach to Retrieval-Augmented Generation Across Diverse Data",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2412.05838",
+        "url": "https://arxiv.org/abs/2412.05838v1"
+      },
+      {
+        "reference_id": "openalex:W4398160786",
+        "reference_type": "external_literature",
+        "title": "Retrieval-Augmented Generation and LLM Agents for Biomimicry Design Solutions",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4398160786",
+        "url": "https://doi.org/10.1609/aaaiss.v3i1.31210"
+      },
+      {
+        "reference_id": "openalex:W4406489787",
+        "reference_type": "external_literature",
+        "title": "MALADE: Orchestration of LLM-powered Agents with Retrieval Augmented Generation for Pharmacovigilance",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4406489787",
+        "url": "http://arxiv.org/abs/2408.01869"
+      },
+      {
+        "reference_id": "openalex:W7124297238",
+        "reference_type": "external_literature",
+        "title": "SCMRAG: Self-Corrective Multihop Retrieval Augmented Generation System for LLM Agents",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7124297238",
+        "url": "https://doi.org/10.65109/wjjv5555"
+      },
+      {
+        "reference_id": "openalex:W4407456038",
+        "reference_type": "external_literature",
+        "title": "Social Intelligence Enhancement Methods for LLM Agents Based on Retrieval-Augmented Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4407456038",
+        "url": "https://doi.org/10.1109/cac63892.2024.10865026"
+      },
+      {
+        "reference_id": "openalex:W7214912650",
+        "reference_type": "external_literature",
+        "title": "Smart Manufacturing Enabled By LLM AI Agents and Retrieval-Augmented Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7214912650",
+        "url": "https://doi.org/10.5644/pi2026.225.04"
+      },
+      {
+        "reference_id": "arxiv:2503.01763",
+        "reference_type": "external_literature",
+        "title": "Retrieval Models Aren't Tool-Savvy: Benchmarking Tool Retrieval for Large Language Models",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2503.01763",
+        "url": "https://arxiv.org/abs/2503.01763v2"
+      },
+      {
+        "reference_id": "arxiv:2111.01762",
+        "reference_type": "external_literature",
+        "title": "AIRCC-Clim: a user-friendly tool for generating regional probabilistic climate change scenarios and risk measures",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2111.01762",
+        "url": "https://arxiv.org/abs/2111.01762v1"
+      },
+      {
+        "reference_id": "arxiv:2603.02888",
+        "reference_type": "external_literature",
+        "title": "LLandMark: A Multi-Agent Framework for Landmark-Aware Multimodal Interactive Video Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2603.02888",
+        "url": "https://arxiv.org/abs/2603.02888v1"
+      },
+      {
+        "reference_id": "arxiv:1811.08772",
+        "reference_type": "external_literature",
+        "title": "Overcoming low-utility facets for complex answer retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "1811.08772",
+        "url": "https://arxiv.org/abs/1811.08772v1"
+      },
+      {
+        "reference_id": "arxiv:2610.05750",
+        "reference_type": "external_literature",
+        "title": "Beyond Semantic Similarity: Performance and Costs of Agentic Retrieval for Complex Tasks",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2610.05750",
+        "url": "https://arxiv.org/abs/2610.05750v1"
+      },
+      {
+        "reference_id": "openalex:W7213269582",
+        "reference_type": "external_literature",
+        "title": "HARP: Agentic Hybrid Retrieval and Analysis for Long-Form Audio",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7213269582",
+        "url": "https://arxiv.org/abs/2609.14116"
+      },
+      {
+        "reference_id": "openalex:W7160692720",
+        "reference_type": "external_literature",
+        "title": "Securing the Agent: Vendor-Neutral, Multitenant Enterprise Retrieval and Tool Use",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7160692720",
+        "url": "https://doi.org/10.1145/3786335.3813145"
+      },
+      {
+        "reference_id": "openalex:W7117479235",
+        "reference_type": "external_literature",
+        "title": "ReAct Modular Agent: Orchestrating Tool-Use and Retrieval for Financial Workflows",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7117479235",
+        "url": "https://doi.org/10.58190/icisna.2025.138"
+      },
+      {
+        "reference_id": "openalex:W7202160026",
+        "reference_type": "external_literature",
+        "title": "UniDocVerse: A Multi-Tenant, Multi-Vertical Document Intelligence Platform with ReAct Agents and Hybrid Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7202160026",
+        "url": "https://doi.org/10.5281/zenodo.21880387"
+      },
+      {
+        "reference_id": "openalex:W7154975610",
+        "reference_type": "external_literature",
+        "title": "vstash: Local-First Hybrid Retrieval with Adaptive Fusion for LLM Agents",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7154975610",
+        "url": "https://arxiv.org/abs/2604.15484"
+      },
+      {
+        "reference_id": "arxiv:2203.08975",
+        "reference_type": "external_literature",
+        "title": "A Survey of Multi-Agent Deep Reinforcement Learning with Communication",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2203.08975",
+        "url": "https://arxiv.org/abs/2203.08975v2"
+      },
+      {
+        "reference_id": "arxiv:2501.09136",
+        "reference_type": "external_literature",
+        "title": "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2501.09136",
+        "url": "https://arxiv.org/abs/2501.09136v4"
+      },
+      {
+        "reference_id": "arxiv:0611654v1",
+        "reference_type": "external_literature",
+        "title": "A rich bounty of AGN in the 9 square degree Bootes survey: high-z obscured AGN and large-scale structure",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "0611654v1",
+        "url": "https://arxiv.org/abs/astro-ph/0611654v1"
+      },
+      {
+        "reference_id": "openalex:W4406542750",
+        "reference_type": "external_literature",
+        "title": "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4406542750",
+        "url": "http://arxiv.org/abs/2501.09136"
+      },
+      {
+        "reference_id": "openalex:W7213206708",
+        "reference_type": "external_literature",
+        "title": "From Retrieval to Action: A Survey of Agentic Retrieval-augmented Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7213206708",
+        "url": "https://doi.org/10.2139/ssrn.7428138"
+      },
+      {
+        "reference_id": "openalex:W4403589311",
+        "reference_type": "external_literature",
+        "title": "Graph Retrieval-Augmented Generation: A Survey",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4403589311",
+        "url": "http://arxiv.org/abs/2408.08921"
+      },
+      {
+        "reference_id": "openalex:W4417313874",
+        "reference_type": "external_literature",
+        "title": "Retrieval-Augmented Generation in Biomedicine: A Survey of Technologies, Datasets, and Clinical Applications",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4417313874",
+        "url": "https://doi.org/10.21203/rs.3.rs-8330917/v1"
+      },
+      {
+        "reference_id": "openalex:W4417025982",
+        "reference_type": "external_literature",
+        "title": "Synthetic Data Generation Using CTGAN with Agentic Workflows and Retrieval-Augmented Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4417025982",
+        "url": "https://doi.org/10.34190/icair.5.1.4280"
+      },
+      {
+        "reference_id": "arxiv:2605.22662",
+        "reference_type": "external_literature",
+        "title": "Claw AI Lab: An Autonomous Multi-Agent Research Team",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2605.22662",
+        "url": "https://arxiv.org/abs/2605.22662v1"
+      },
+      {
+        "reference_id": "arxiv:2603.28944",
+        "reference_type": "external_literature",
+        "title": "Faith in AI can narrow the futures individuals consider",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2603.28944",
+        "url": "https://arxiv.org/abs/2603.28944v2"
+      },
+      {
+        "reference_id": "arxiv:2606.26122",
+        "reference_type": "external_literature",
+        "title": "DocArena: Turning Raw Documents into Controllable Training Environments for Document Search Agents",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2606.26122",
+        "url": "https://arxiv.org/abs/2606.26122v1"
+      },
+      {
+        "reference_id": "arxiv:2607.04282",
+        "reference_type": "external_literature",
+        "title": "The New Shape of Search: How Conversational AI Recomposes Information Seeking",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2607.04282",
+        "url": "https://arxiv.org/abs/2607.04282v3"
+      },
+      {
+        "reference_id": "arxiv:2501.02842",
+        "reference_type": "external_literature",
+        "title": "Foundations of GenIR",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2501.02842",
+        "url": "https://arxiv.org/abs/2501.02842v1"
+      },
+      {
+        "reference_id": "openalex:W4413427262",
+        "reference_type": "external_literature",
+        "title": "AI Agents vs. Agentic AI: A Conceptual taxonomy, applications and challenges",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4413427262",
+        "url": "https://doi.org/10.1016/j.inffus.2025.103599"
+      },
+      {
+        "reference_id": "openalex:W4412505619",
+        "reference_type": "external_literature",
+        "title": "AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4412505619",
+        "url": "https://doi.org/10.70777/si.v2i3.15161"
+      },
+      {
+        "reference_id": "openalex:W4416178376",
+        "reference_type": "external_literature",
+        "title": "Agentic Lab: An Agentic-physical AI system for cell and organoid experimentation and manufacturing",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4416178376",
+        "url": "https://doi.org/10.1101/2025.11.11.686354"
+      },
+      {
+        "reference_id": "openalex:W7172379984",
+        "reference_type": "external_literature",
+        "title": "Hybrid AI for Explainable and Accurate Conversational Agents in eGovernment",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7172379984",
+        "url": "https://arxiv.org/abs/2608.01346"
+      },
+      {
+        "reference_id": "openalex:W3176051226",
+        "reference_type": "external_literature",
+        "title": "The AI-Atlas: Didactics for Teaching AI and Machine Learning On-Site, Online, and Hybrid",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W3176051226",
+        "url": "https://doi.org/10.3390/educsci11070318"
+      },
+      {
+        "reference_id": "arxiv:2605.05991",
+        "reference_type": "external_literature",
+        "title": "A Case-Driven Multi-Agent Framework for E-Commerce Search Relevance",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2605.05991",
+        "url": "https://arxiv.org/abs/2605.05991v1"
+      },
+      {
+        "reference_id": "arxiv:2504.05181",
+        "reference_type": "external_literature",
+        "title": "Lightweight and Direct Document Relevance Optimization for Generative Information Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2504.05181",
+        "url": "https://arxiv.org/abs/2504.05181v2"
+      },
+      {
+        "reference_id": "arxiv:2604.23396",
+        "reference_type": "external_literature",
+        "title": "Lost in Decoding? Reproducing and Stress-Testing the Look-Ahead Prior in Generative Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2604.23396",
+        "url": "https://arxiv.org/abs/2604.23396v1"
+      },
+      {
+        "reference_id": "arxiv:2505.21439",
+        "reference_type": "external_literature",
+        "title": "Towards Better Instruction Following Retrieval Models",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2505.21439",
+        "url": "https://arxiv.org/abs/2505.21439v1"
+      },
+      {
+        "reference_id": "arxiv:2309.15217",
+        "reference_type": "external_literature",
+        "title": "Ragas: Automated Evaluation of Retrieval Augmented Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2309.15217",
+        "url": "https://arxiv.org/abs/2309.15217v2"
+      },
+      {
+        "reference_id": "arxiv:2607.28282",
+        "reference_type": "external_literature",
+        "title": "(Towards) Scalable Reliable Automated Evaluation with Large Language Models",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2607.28282",
+        "url": "https://arxiv.org/abs/2607.28282v1"
+      },
+      {
+        "reference_id": "arxiv:2001.08941",
+        "reference_type": "external_literature",
+        "title": "Symmetries and periodic orbits in simple hybrid Routhian systems",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2001.08941",
+        "url": "https://arxiv.org/abs/2001.08941v1"
+      },
+      {
+        "reference_id": "arxiv:0607200v1",
+        "reference_type": "external_literature",
+        "title": "Dynamics of Controlled Hybrid Systems of Aerial Cable-Ways",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "0607200v1",
+        "url": "https://arxiv.org/abs/math/0607200v1"
+      },
+      {
+        "reference_id": "arxiv:2411.00907",
+        "reference_type": "external_literature",
+        "title": "On the Impact of White-box Deployment Strategies for Edge AI on Latency and Model Performance",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2411.00907",
+        "url": "https://arxiv.org/abs/2411.00907v3"
+      },
+      {
+        "reference_id": "arxiv:2309.11379",
+        "reference_type": "external_literature",
+        "title": "Incremental Blockwise Beam Search for Simultaneous Speech Translation with Controllable Quality-Latency Tradeoff",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2309.11379",
+        "url": "https://arxiv.org/abs/2309.11379v1"
+      },
+      {
+        "reference_id": "arxiv:1610.04362",
+        "reference_type": "external_literature",
+        "title": "Ultra-Low Latency for 5G - A Lab Trial",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "1610.04362",
+        "url": "https://arxiv.org/abs/1610.04362v1"
+      },
+      {
+        "reference_id": "arxiv:2605.04999",
+        "reference_type": "external_literature",
+        "title": "A Tutorial for Evaluating Cure Model Appropriateness",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2605.04999",
+        "url": "https://arxiv.org/abs/2605.04999v2"
+      },
+      {
+        "reference_id": "arxiv:1311.3001",
+        "reference_type": "external_literature",
+        "title": "Informed Source Separation: A Bayesian Tutorial",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "1311.3001",
+        "url": "https://arxiv.org/abs/1311.3001v1"
+      },
+      {
+        "reference_id": "arxiv:2609.09519",
+        "reference_type": "external_literature",
+        "title": "HLSFactory-Agent: Large-Scale Agentic HLS Dataset Construction from Academic and Open-Source Projects",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2609.09519",
+        "url": "https://arxiv.org/abs/2609.09519v1"
+      }
+    ],
+    "uncertainty_notes": [
+      "Evidence base covers only hybrid retrieval fundamentals; integration with agent workflows is unsupported.",
+      "Low retrieval scores and duplicate excerpts limit confidence in broader applicability.",
+      "No empirical data on personal lab deployment constraints.",
+      "Overall evidence coverage is limited; conclusions should be treated cautiously."
+    ]
+  },
+  "citations": [
+    {
+      "citation_number": 1,
+      "label": "[1]",
+      "evidence_id": "67bb47b3-e515-4ee5-a5a8-17502b607f3f",
+      "claim_text": null
+    }
+  ],
+  "conclusions": [
+    "Hybrid retrieval systems combine BM25 keyword retrieval and dense vector semantic retrieval, with reciprocal rank fusion (RRF) as a method to fuse results from multiple retrievers."
+  ],
+  "unresolved_questions": [
+    "How to integrate BM25/dense vector hybrid retrieval with LLM agent reasoning loops?",
+    "What evaluation metrics and benchmarks assess hybrid search-agent integrations in personal labs?",
+    "What are the compute, latency, and privacy trade-offs for deploying hybrid search-agent systems locally?",
+    "What practitioner guides or open-source templates exist for end-to-end integration?",
+    "How to balance retrieval quality with system efficiency under typical personal lab hardware constraints?",
+    "Practitioner perspectives from blogs or tutorials describing deployment of hybrid search‑agent systems in small‑scale or personal lab settings.",
+    "Open‑source repository examples that demonstrate end‑to‑end integration of hybrid search with agent frameworks.",
+    "Community‑driven best practices or case studies focusing on resource‑constrained implementations.",
+    "How do LangChain agents integrate with hybrid BM25‑dense vector retrievers in practice?",
+    "What are the latency and accuracy trade‑offs when using reciprocal rank fusion versus weighted sum fusion in agent loops?",
+    "Which open‑source libraries provide easy‑to‑use hybrid search APIs suitable for agent tool‑use in a personal lab?",
+    "What evaluation metrics have been used in prior work to measure the effectiveness of retrieval‑augmented agents in resource‑limited settings?"
+  ],
+  "critique": {
+    "question": "how should my personal lab can combine personal hybrid search with agent workflows ?",
+    "evidence_sufficient": false,
+    "source_quality": [
+      "Local evidence consists of duplicate excerpts from a sample research PDF with low retrieval scores, indicating limited relevance and depth.",
+      "External papers include a mix of recent arXiv preprints and openalex entries with varying citation counts, suggesting preliminary or heterogeneous quality."
+    ],
+    "conflicting_evidence": [],
+    "unsupported_claims": [
+      "Claims about how AutoGPT, LangChain agents, or BabyAGI incorporate external retrieval are not supported by the bundle.",
+      "Statements regarding techniques for coupling hybrid search outputs with agent reasoning loops (e.g., retrieval-augmented generation, tool-use, memory augmentation) lack supporting evidence.",
+      "Information on evaluation metrics and benchmarks for assessing hybrid search‑agent integrations is absent.",
+      "Details on practical considerations such as compute, latency, data privacy, and maintenance for personal lab environments are missing."
+    ],
+    "missing_perspectives": [
+      "Practitioner perspectives from blogs or tutorials describing deployment of hybrid search‑agent systems in small‑scale or personal lab settings.",
+      "Open‑source repository examples that demonstrate end‑to‑end integration of hybrid search with agent frameworks.",
+      "Community‑driven best practices or case studies focusing on resource‑constrained implementations."
+    ],
+    "duplicate_evidence": [
+      {
+        "evidence_ids": [
+          "67bb47b3-e515-4ee5-a5a8-17502b607f3f",
+          "994a10a4-3740-4c9e-9999-743428ef007b"
+        ],
+        "reason": "High textual overlap between excerpts"
+      }
+    ],
+    "research_gaps": [
+      "Empirical studies measuring latency, cost, and accuracy of hybrid search‑agent pipelines under typical personal lab hardware constraints.",
+      "Standardized benchmarks or evaluation suites tailored to assessing retrieval‑augmented agent performance in low‑resource scenarios.",
+      "Guidelines for balancing retrieval quality with privacy and maintenance overhead when running hybrid search locally."
+    ],
+    "additional_research_required": [
+      "Conduct comparative experiments of retrieval‑augmented generation frameworks (e.g., LangChain, LlamaIndex) using hybrid BM25‑dense vector retrievers on personal lab hardware.",
+      "Develop and validate lightweight evaluation metrics that reflect both retrieval quality and system efficiency for small‑scale deployments.",
+      "Create documentation or templates for integrating hybrid search with agent workflows while addressing data privacy and update maintenance."
+    ],
+    "additional_research_queries": [
+      "How do LangChain agents integrate with hybrid BM25‑dense vector retrievers in practice?",
+      "What are the latency and accuracy trade‑offs when using reciprocal rank fusion versus weighted sum fusion in agent loops?",
+      "Which open‑source libraries provide easy‑to‑use hybrid search APIs suitable for agent tool‑use in a personal lab?",
+      "What evaluation metrics have been used in prior work to measure the effectiveness of retrieval‑augmented agents in resource‑limited settings?"
+    ],
+    "sufficiency_rationale": "The bundle provides only basic notes on hybrid retrieval components (BM25, dense vectors, reciprocal rank fusion) and lacks evidence on agent workflow frameworks, coupling techniques, evaluation metrics, and practical considerations for personal lab deployment.",
+    "deterministic_flags": [
+      "duplicate_evidence_detected",
+      "low_retrieval_scores"
+    ]
+  }
+}

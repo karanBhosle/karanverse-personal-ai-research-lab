@@ -1,0 +1,45 @@
+{
+  "source": "karanBhosle/portpolio-app (src/data)",
+  "profile": {
+    "name": "Karan Bhosle",
+    "role": "Data Scientist",
+    "focus_areas": [
+      "Retrieval-augmented generation",
+      "Agentic AI systems",
+      "Hybrid sparse-dense retrieval",
+      "Model Context Protocol (MCP)",
+      "Production ML and research tooling"
+    ],
+    "summary": "Builds personal research infrastructure that combines grounded retrieval, multi-agent workflows, and external literature sources."
+  },
+  "projects": [
+    {
+      "id": "karanverse-research-lab",
+      "name": "karanVerse Personal AI Research Lab",
+      "description": "Local research lab with Docling ingestion, BM25 + Qdrant hybrid retrieval, cross-encoder reranking, LangGraph agents, OpenAlex/arXiv sources, and optional Neo4j knowledge graph.",
+      "technologies": ["FastAPI", "LangGraph", "Qdrant", "OpenAlex", "arXiv", "Neo4j"],
+      "topics": ["hybrid retrieval", "agentic RAG", "evidence citations", "research agents"]
+    },
+    {
+      "id": "portfolio-app",
+      "name": "Portfolio App",
+      "description": "Personal portfolio site showcasing projects, skills, and research interests.",
+      "technologies": ["TypeScript", "React"],
+      "topics": ["personal branding", "project showcase"]
+    }
+  ],
+  "learning_notes": [
+    {
+      "topic": "Graph RAG",
+      "content": "Graph RAG connects structured knowledge graphs with retrieval so agents can traverse entities and relations instead of relying only on flat chunk search. I plan to link Neo4j concepts to hybrid retrieval in the research lab."
+    },
+    {
+      "topic": "Hybrid retrieval",
+      "content": "BM25 plus dense embeddings fused with reciprocal rank fusion improves recall on technical notes and papers. Cross-encoder reranking sharpens precision for agent evidence bundles."
+    },
+    {
+      "topic": "Agents and MCP",
+      "content": "Agentic workflows benefit from MCP tools for external systems while keeping synthesis grounded in local evidence. I separate planning, collection, critique, and synthesis stages."
+    }
+  ]
+}

@@ -1,0 +1,2042 @@
+{
+  "research_id": "2073c556-337e-45e0-9256-98aae3b64777",
+  "question": "what is vectorless rag ?",
+  "created_at": "2026-10-06T18:00:53.708754Z",
+  "plan": {
+    "original_question": "what is vectorless rag ?",
+    "research_objective": "To comprehensively understand the concept, methodologies, and current state of vectorless Retrieval-Augmented Generation (RAG) systems, including their definitions, implementations, applications, evaluation metrics, limitations, and future research directions.",
+    "sub_questions": [
+      "What is the precise definition and underlying principle of vectorless RAG compared to traditional vector-based RAG?",
+      "Which algorithmic approaches and architectures enable retrieval without dense vector representations?",
+      "What are the primary use cases and domains where vectorless RAG demonstrates advantages?",
+      "How is the effectiveness of vectorless RAG measured and evaluated (metrics, benchmarks, comparative studies)?",
+      "What are the main limitations, challenges, and open problems associated with vectorless RAG?",
+      "What future research trends and potential improvements are identified in the literature for vectorless RAG?"
+    ],
+    "search_queries": [
+      "vectorless RAG definition",
+      "vectorless retrieval-augmented generation",
+      "RAG without vectors",
+      "dense retrieval alternatives",
+      "vectorless information retrieval",
+      "RAG using keyword matching only",
+      "vectorless RAG applications",
+      "evaluation metrics for vectorless RAG",
+      "benchmarks for vectorless RAG",
+      "limitations of vectorless RAG",
+      "future directions vectorless RAG"
+    ],
+    "required_sources": [
+      "arxiv",
+      "openalex"
+    ],
+    "expected_evidence": [
+      "Peer-reviewed papers defining and analyzing vectorless RAG",
+      "Survey or review articles summarizing the field",
+      "Technical reports or blog posts describing implementations",
+      "Benchmark datasets and evaluation results",
+      "Comparative studies against traditional vector-based RAG",
+      "Open-source repositories or code examples",
+      "Academic theses or dissertations on the topic"
+    ],
+    "research_strategy": "1. Conduct an initial literature scan using the provided search queries on arxiv and openalex to collect foundational definitions and early works.\n2. Extract and categorize vectorless RAG approaches based on methodology (e.g., keyword matching, symbolic retrieval, hybrid systems).\n3. Identify and compile evaluation studies, benchmarks, and performance metrics reported in the collected papers.\n4. Map out application domains and real-world use cases mentioned in the literature.\n5. Synthesize findings to outline the strengths, limitations, and open challenges of vectorless RAG.\n6. Summarize emerging research trends and propose potential future research directions based on identified gaps."
+  },
+  "sources": [
+    {
+      "source": "arxiv",
+      "title": "arxiv",
+      "external_id": null,
+      "url": null
+    },
+    {
+      "source": "openalex",
+      "title": "openalex",
+      "external_id": null,
+      "url": null
+    },
+    {
+      "source": "arxiv",
+      "title": "RAG System for Supporting Japanese Litigation Procedures: Faithful Response Generation Complying with Legal Norms",
+      "external_id": "2511.22858",
+      "url": "https://arxiv.org/abs/2511.22858v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Roman Galactic Plane Survey Definition Committee Report",
+      "external_id": "2511.07494",
+      "url": "https://arxiv.org/abs/2511.07494v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries",
+      "external_id": "2401.15391",
+      "url": "https://arxiv.org/abs/2401.15391v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "RAG-Star: Enhancing Deliberative Reasoning with Retrieval Augmented Verification and Refinement",
+      "external_id": "2412.12881",
+      "url": "https://arxiv.org/abs/2412.12881v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "T-RAG: Lessons from the LLM Trenches",
+      "external_id": "2402.07483",
+      "url": "https://arxiv.org/abs/2402.07483v2"
+    },
+    {
+      "source": "openalex",
+      "title": "VDGR-RAG: Vectors, Directories, Graphs, and Reflection Are All You Need for Unified Reasoning over Hierarchical Enterprise Knowledge",
+      "external_id": "W7202168689",
+      "url": "https://arxiv.org/abs/2608.07994"
+    },
+    {
+      "source": "openalex",
+      "title": "Adaptive Query Routing: A Tier-Based Framework for Hybrid Retrieval Across Financial, Legal, and Medical Documents",
+      "external_id": "W7154751765",
+      "url": "https://arxiv.org/abs/2604.14222"
+    },
+    {
+      "source": "openalex",
+      "title": "MCompassRAG: Topic Metadata as a Semantic Compass for Paragraph-Level Retrieval",
+      "external_id": "W7165190586",
+      "url": "https://arxiv.org/abs/2606.18508"
+    },
+    {
+      "source": "openalex",
+      "title": "Memory-Orchestrated Semantic System (MOSS): An Auditable Agentic Memory Architecture",
+      "external_id": "W7167628002",
+      "url": "https://arxiv.org/abs/2607.04391"
+    },
+    {
+      "source": "openalex",
+      "title": "LLM-Oriented Information Retrieval: A Denoising-First Perspective",
+      "external_id": "W7160360704",
+      "url": "https://arxiv.org/abs/2605.00505"
+    },
+    {
+      "source": "arxiv",
+      "title": "AR-RAG: Autoregressive Retrieval Augmentation for Image Generation",
+      "external_id": "2506.06962",
+      "url": "https://arxiv.org/abs/2506.06962v3"
+    },
+    {
+      "source": "arxiv",
+      "title": "EVOR: Evolving Retrieval for Code Generation",
+      "external_id": "2402.12317",
+      "url": "https://arxiv.org/abs/2402.12317v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augmented Generation",
+      "external_id": "2411.18583",
+      "url": "https://arxiv.org/abs/2411.18583v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+      "external_id": "2502.00306",
+      "url": "https://arxiv.org/abs/2502.00306v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "Engineering the RAG Stack: A Comprehensive Review of the Architecture and Trust Frameworks for Retrieval-Augmented Generation Systems",
+      "external_id": "2601.05264",
+      "url": "https://arxiv.org/abs/2601.05264v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Benchmarking Vectorless vs Hybrid RAG in Healthcare AI",
+      "external_id": "W7171739211",
+      "url": "https://doi.org/10.2139/ssrn.6951879"
+    },
+    {
+      "source": "openalex",
+      "title": "VecTree-RAG: An Agentic Retrieval-Augmented Generation Framework Combining Vector and Tree Retrieval for Efficiency and Accuracy",
+      "external_id": "W7171524164",
+      "url": "https://arxiv.org/abs/2607.23006"
+    },
+    {
+      "source": "openalex",
+      "title": "HVM-GraphRAG: Holistic-View Multimodal Graph Retrieval-Augmented Generation on Complex Document",
+      "external_id": "W7171728473",
+      "url": "https://arxiv.org/abs/2607.24861"
+    },
+    {
+      "source": "arxiv",
+      "title": "RAG over Tables: Hierarchical Memory Index, Multi-Stage Retrieval, and Benchmarking",
+      "external_id": "2504.01346",
+      "url": "https://arxiv.org/abs/2504.01346v4"
+    },
+    {
+      "source": "openalex",
+      "title": "Keyword search is all you need: Achieving RAG-Level Performance without vector databases using agentic tool use",
+      "external_id": "W7133198032",
+      "url": "http://arxiv.org/abs/2602.23368"
+    },
+    {
+      "source": "openalex",
+      "title": "Graph RAG vs. Vector RAG: A Performance Comparison in Response Generation",
+      "external_id": "W7143484776",
+      "url": "https://doi.org/10.55592/cilamce2025.v5i.14006"
+    },
+    {
+      "source": "openalex",
+      "title": "Index-RAG: Storing Text Locations in Vector Databases for Question-Answering Tasks",
+      "external_id": "W7140314688",
+      "url": "https://doi.org/10.20944/preprints202603.2025.v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Driving-RAG: Driving Scenarios Embedding, Search, and RAG Applications",
+      "external_id": "W7135051463",
+      "url": "https://doi.org/10.1007/s42154-025-00405-4"
+    },
+    {
+      "source": "openalex",
+      "title": "Driving-RAG: Driving Scenarios Embedding, Search, and RAG Applications",
+      "external_id": "W4416116862",
+      "url": "http://arxiv.org/abs/2504.04419"
+    },
+    {
+      "source": "arxiv",
+      "title": "Overcoming low-utility facets for complex answer retrieval",
+      "external_id": "1811.08772",
+      "url": "https://arxiv.org/abs/1811.08772v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "On Single and Multiple Representations in Dense Passage Retrieval",
+      "external_id": "2108.06279",
+      "url": "https://arxiv.org/abs/2108.06279v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "Analysing the Robustness of Dual Encoders for Dense Retrieval Against Misspellings",
+      "external_id": "2205.02303",
+      "url": "https://arxiv.org/abs/2205.02303v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation",
+      "external_id": "2602.00899",
+      "url": "https://arxiv.org/abs/2602.00899v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Improving the Robustness of Dense Retrievers Against Typos via Multi-Positive Contrastive Learning",
+      "external_id": "2403.10939",
+      "url": "https://arxiv.org/abs/2403.10939v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+      "external_id": "W3015883388",
+      "url": "https://doi.org/10.18653/v1/2020.emnlp-main.550"
+    },
+    {
+      "source": "openalex",
+      "title": "Sparse, Dense, and Attentional Representations for Text Retrieval",
+      "external_id": "W3157758108",
+      "url": "https://doi.org/10.1162/tacl_a_00369"
+    },
+    {
+      "source": "openalex",
+      "title": "Unsupervised Dense Information Retrieval with Contrastive Learning",
+      "external_id": "W4320813768",
+      "url": "http://arxiv.org/abs/2112.09118"
+    },
+    {
+      "source": "openalex",
+      "title": "Condenser: a Pre-training Architecture for Dense Retrieval",
+      "external_id": "W3211633257",
+      "url": "https://doi.org/10.18653/v1/2021.emnlp-main.75"
+    },
+    {
+      "source": "openalex",
+      "title": "Sparse, Dense, and Attentional Representations for Text Retrieval",
+      "external_id": "W3021282678",
+      "url": "http://arxiv.org/abs/2005.00181"
+    },
+    {
+      "source": "arxiv",
+      "title": "Lightweight and Direct Document Relevance Optimization for Generative Information Retrieval",
+      "external_id": "2504.05181",
+      "url": "https://arxiv.org/abs/2504.05181v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "Dynamic Information Retrieval: Theoretical Framework and Application",
+      "external_id": "1601.04605",
+      "url": "https://arxiv.org/abs/1601.04605v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Bibliometric-enhanced Information Retrieval: 2nd International BIR Workshop",
+      "external_id": "1501.02646",
+      "url": "https://arxiv.org/abs/1501.02646v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Towards Proactive Information Retrieval in Noisy Text with Wikipedia Concepts",
+      "external_id": "2210.09877",
+      "url": "https://arxiv.org/abs/2210.09877v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Agent Retrieval Bench: Evaluating Repository Context Retrieval for Coding Agents",
+      "external_id": "W7171670812",
+      "url": "https://arxiv.org/abs/2607.24882"
+    },
+    {
+      "source": "arxiv",
+      "title": "Keyword Extraction in Scientific Documents",
+      "external_id": "2207.01888",
+      "url": "https://arxiv.org/abs/2207.01888v2"
+    },
+    {
+      "source": "openalex",
+      "title": "CiteFix: Enhancing RAG Accuracy Through Post-Processing Citation Correction",
+      "external_id": "W4412887019",
+      "url": "https://doi.org/10.18653/v1/2025.acl-industry.23"
+    },
+    {
+      "source": "openalex",
+      "title": "Computational Exploration of Sage Agastya in Indian Epics Using NLP and RAG",
+      "external_id": "W7132870698",
+      "url": "https://trepo.tuni.fi/handle/10024/233082"
+    },
+    {
+      "source": "openalex",
+      "title": "The Evolution of Search Engines: From Keyword Matching to AI-Powered Understandin",
+      "external_id": "W4412125826",
+      "url": "https://doi.org/10.5120/ijca2025925279"
+    },
+    {
+      "source": "openalex",
+      "title": "Blended RAG: Improving RAG (Retriever-Augmented Generation) Accuracy with Semantic Search and Hybrid Query-Based Retrievers",
+      "external_id": "W4403420914",
+      "url": "https://doi.org/10.1109/mipr62202.2024.00031"
+    },
+    {
+      "source": "openalex",
+      "title": "NGM-RAG: Neural Graph Matching based Retrieval-Augmented Generation",
+      "external_id": "W7168300990",
+      "url": "https://arxiv.org/abs/2607.11159"
+    },
+    {
+      "source": "openalex",
+      "title": "SproutRAG: Attention-Guided Tree Search with Progressive Embeddings for Long-Document RAG",
+      "external_id": "W7165177996",
+      "url": "https://arxiv.org/abs/2606.18381"
+    },
+    {
+      "source": "openalex",
+      "title": "Odgovarjanje na vprašanja iz starih virov z velikimi jezikovnimi modeli",
+      "external_id": "W7160791439",
+      "url": "https://plus.cobiss.net/cobiss/si/sl/bib/277475587"
+    },
+    {
+      "source": "openalex",
+      "title": "Large Language Models for Assisting American College Applications",
+      "external_id": "W7130561399",
+      "url": "http://arxiv.org/abs/2602.15850"
+    },
+    {
+      "source": "arxiv",
+      "title": "Position: Evaluation Scores Are Perishable Knowledge Claims",
+      "external_id": "2607.26191",
+      "url": "https://arxiv.org/abs/2607.26191v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "(Towards) Scalable Reliable Automated Evaluation with Large Language Models",
+      "external_id": "2607.28282",
+      "url": "https://arxiv.org/abs/2607.28282v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Retrieval Augmented Generation (RAG) for Fintech: Agentic Design and Evaluation",
+      "external_id": "2510.25518",
+      "url": "https://arxiv.org/abs/2510.25518v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Structure-Guided Retrieval with LLM-Directed Table-of-Contents Navigation and Precomputed Semantic Contagion: A Hybrid RAG Architecture",
+      "external_id": "W7213530082",
+      "url": "https://doi.org/10.2139/ssrn.7470078"
+    },
+    {
+      "source": "openalex",
+      "title": "Structure-Guided Retrieval with LLM-Directed Table-of-Contents Navigation and Precomputed Semantic Contagion: A Hybrid RAG Architecture",
+      "external_id": "W7213441038",
+      "url": "https://doi.org/10.2139/ssrn.7467558"
+    },
+    {
+      "source": "arxiv",
+      "title": "CRAG -- Comprehensive RAG Benchmark",
+      "external_id": "2406.04744",
+      "url": "https://arxiv.org/abs/2406.04744v2"
+    },
+    {
+      "source": "openalex",
+      "title": "Rethinking Agentic RAG: Toward LLM-Driven Logical Retrieval Beyond Embeddings",
+      "external_id": "W7162576191",
+      "url": "https://arxiv.org/abs/2605.27123"
+    },
+    {
+      "source": "arxiv",
+      "title": "Report from the NSF Future Directions Workshop, Toward User-Oriented Agents: Research Directions and Challenges",
+      "external_id": "2006.06026",
+      "url": "https://arxiv.org/abs/2006.06026v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Semantic Compression Trees: Multi-Resolution Knowledge Retrieval via Hierarchical Semantic Residuals",
+      "external_id": "W7204159452",
+      "url": "https://arxiv.org/abs/2608.21610"
+    },
+    {
+      "source": "openalex",
+      "title": "Robust Hierarchical Structures for Agentic Document Analysis",
+      "external_id": "W7214804757",
+      "url": "https://arxiv.org/abs/2609.33322"
+    },
+    {
+      "source": "openalex",
+      "title": "Achilles and The Batman on the Plane of Immanence: Deconstructing Heroic Models",
+      "external_id": "W2888868929",
+      "url": "https://surface.syr.edu/etd/799"
+    },
+    {
+      "source": "arxiv",
+      "title": "Keyword search is all you need: Achieving RAG-Level Performance without vector databases using agentic tool use",
+      "external_id": "2602.23368",
+      "url": "https://arxiv.org/abs/2602.23368v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Scalable Continual Top-k Keyword Search in Relational Databases",
+      "external_id": "1108.4516",
+      "url": "https://arxiv.org/abs/1108.4516v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "RAG-Stack: Co-Optimizing RAG Quality and Performance From the Vector Database Perspective",
+      "external_id": "2510.20296",
+      "url": "https://arxiv.org/abs/2510.20296v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Mragyati : A System for Keyword-based Searching in Databases",
+      "external_id": "0110052v1",
+      "url": "https://arxiv.org/abs/cs/0110052v1"
+    },
+    {
+      "source": "openalex",
+      "title": "TigerVector: Supporting Vector Search in Graph Databases for Advanced RAGs",
+      "external_id": "W4411374210",
+      "url": "https://doi.org/10.1145/3722212.3724456"
+    },
+    {
+      "source": "openalex",
+      "title": "RAG on Multimodal Databases: Orchestrating Textual, Vector, and Graph-based Retrieval",
+      "external_id": "W4415430955",
+      "url": "https://doi.org/10.5753/sbbd_estendido.2025.tutorial3"
+    },
+    {
+      "source": "openalex",
+      "title": "Distributed RAG Architecture for Enterprise Knowledge QA on Databricks",
+      "external_id": "W7155488339",
+      "url": "https://doi.org/10.63282/3050-9416.ijaibdcms-v7i2p117"
+    },
+    {
+      "source": "openalex",
+      "title": "Bridging Generative AI and External Knowledge: A Review of Retrieval-Augmented Generation (RAG) and Vector Database Integration",
+      "external_id": "W7203613120",
+      "url": "https://doi.org/10.47772/ijriss.2026.100700908"
+    },
+    {
+      "source": "arxiv",
+      "title": "Retrieval Models Aren't Tool-Savvy: Benchmarking Tool Retrieval for Large Language Models",
+      "external_id": "2503.01763",
+      "url": "https://arxiv.org/abs/2503.01763v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "Securing the Agent: Vendor-Neutral, Multitenant Enterprise Retrieval and Tool Use",
+      "external_id": "2605.05287",
+      "url": "https://arxiv.org/abs/2605.05287v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "AIRCC-Clim: a user-friendly tool for generating regional probabilistic climate change scenarios and risk measures",
+      "external_id": "2111.01762",
+      "url": "https://arxiv.org/abs/2111.01762v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Beyond Semantic Similarity: Performance and Costs of Agentic Retrieval for Complex Tasks",
+      "external_id": "2610.05750",
+      "url": "https://arxiv.org/abs/2610.05750v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Tool-calling Agents for Retrieval-Augmented Complex Question Answering",
+      "external_id": "W7149218288",
+      "url": "https://resolver.obvsg.at/urn:nbn:at:at-ubi:1-195455"
+    },
+    {
+      "source": "openalex",
+      "title": "Adapting Embedding Models for Agent Capability Retrieval",
+      "external_id": "W7169836791",
+      "url": "https://arxiv.org/abs/2607.17347"
+    },
+    {
+      "source": "openalex",
+      "title": "ReAct Modular Agent: Orchestrating Tool-Use and Retrieval for Financial Workflows",
+      "external_id": "W7117479235",
+      "url": "https://doi.org/10.58190/icisna.2025.138"
+    },
+    {
+      "source": "openalex",
+      "title": "Securing the Agent: Vendor-Neutral, Multitenant Enterprise Retrieval and Tool Use",
+      "external_id": "W7160692720",
+      "url": "https://doi.org/10.1145/3786335.3813145"
+    },
+    {
+      "source": "openalex",
+      "title": "Tool-to-Agent Retrieval: Bridging Tools and Agents for Scalable LLM Multi-Agent Systems",
+      "external_id": "W4415945867",
+      "url": "http://arxiv.org/abs/2511.01854"
+    },
+    {
+      "source": "arxiv",
+      "title": "Symmetries and periodic orbits in simple hybrid Routhian systems",
+      "external_id": "2001.08941",
+      "url": "https://arxiv.org/abs/2001.08941v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "A Comparison Benchmark for Distributed Hybrid MPC Control Methods: Distributed Vehicle Platooning",
+      "external_id": "2401.09878",
+      "url": "https://arxiv.org/abs/2401.09878v3"
+    },
+    {
+      "source": "openalex",
+      "title": "FinanceComplexQA: Benchmarking Agentic Reasoning on Industrial-grade Financial Documents",
+      "external_id": "W7170065854",
+      "url": "https://arxiv.org/abs/2607.19238"
+    },
+    {
+      "source": "openalex",
+      "title": "LLM-Guided Planning for Multi-hop Reasoning over Multimodal Nuclear Regulatory Documents",
+      "external_id": "W7166643129",
+      "url": "https://arxiv.org/abs/2606.29399"
+    },
+    {
+      "source": "arxiv",
+      "title": "Rethinking Agentic RAG: Toward LLM-Driven Logical Retrieval Beyond Embeddings",
+      "external_id": "2605.27123",
+      "url": "https://arxiv.org/abs/2605.27123v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "A Plan Reuse Mechanism for LLM-Driven Agent",
+      "external_id": "2512.21309",
+      "url": "https://arxiv.org/abs/2512.21309v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "Privacy-Preserving Important Passage Retrieval",
+      "external_id": "1407.5416",
+      "url": "https://arxiv.org/abs/1407.5416v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Table2Vec: Neural Word and Entity Embeddings for Table Population and Retrieval",
+      "external_id": "1906.00041",
+      "url": "https://arxiv.org/abs/1906.00041v1"
+    },
+    {
+      "source": "openalex",
+      "title": "PropertyGPT: LLM-driven Formal Verification of Smart Contracts through Retrieval-Augmented Property Generation",
+      "external_id": "W4408749890",
+      "url": "https://doi.org/10.14722/ndss.2025.241357"
+    },
+    {
+      "source": "openalex",
+      "title": "SR-LLM: An incremental symbolic regression framework driven by LLM-based retrieval-augmented generation",
+      "external_id": "W7116755151",
+      "url": "https://doi.org/10.1073/pnas.2516995122"
+    },
+    {
+      "source": "openalex",
+      "title": "Retrieval-Driven Memory Reconsolidation for Long-Term LLM Agents",
+      "external_id": "W7213438376",
+      "url": "https://arxiv.org/abs/2609.16053"
+    },
+    {
+      "source": "openalex",
+      "title": "Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond",
+      "external_id": "W4392240262",
+      "url": "https://doi.org/10.1145/3649506"
+    },
+    {
+      "source": "openalex",
+      "title": "Beyond Vector Similarity: Hierarchical Context-Aware Graph RAG vs Standard RAG in Enterprise Code Migration",
+      "external_id": "W7213006018",
+      "url": "https://arxiv.org/abs/2609.12464"
+    },
+    {
+      "source": "openalex",
+      "title": "Is Agentic RAG worth it? An experimental comparison of RAG approaches",
+      "external_id": "W7124117426",
+      "url": "https://arxiv.org/abs/2601.07711"
+    },
+    {
+      "source": "openalex",
+      "title": "Is Agentic RAG worth it? An experimental comparison of RAG approaches",
+      "external_id": "W7166881024",
+      "url": "https://doi.org/10.18653/v1/2026.acl-industry.5"
+    },
+    {
+      "source": "arxiv",
+      "title": "A Practical Guide to CNNs and Fisher Vectors for Image Instance Retrieval",
+      "external_id": "1508.02496",
+      "url": "https://arxiv.org/abs/1508.02496v3"
+    },
+    {
+      "source": "arxiv",
+      "title": "PARM: A Paragraph Aggregation Retrieval Model for Dense Document-to-Document Retrieval",
+      "external_id": "2201.01614",
+      "url": "https://arxiv.org/abs/2201.01614v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "Generative Retrieval as Multi-Vector Dense Retrieval",
+      "external_id": "2404.00684",
+      "url": "https://arxiv.org/abs/2404.00684v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Retrieval Grounding Latent Reasoning for Dense Retrieval",
+      "external_id": "W7203650216",
+      "url": "https://arxiv.org/abs/2608.14107"
+    },
+    {
+      "source": "openalex",
+      "title": "MimirRAG: A Multi-Agent RAG Framework for Financial Data Retrieval with Metadata Integration",
+      "external_id": "W7162438838",
+      "url": "https://arxiv.org/abs/2605.25030"
+    },
+    {
+      "source": "openalex",
+      "title": "A Systematic Framework for Enterprise Knowledge Retrieval: Leveraging LLM-Generated Metadata to Enhance RAG Systems",
+      "external_id": "W4417142350",
+      "url": "https://doi.org/10.1109/cai68641.2026.11536510"
+    },
+    {
+      "source": "arxiv",
+      "title": "Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation",
+      "external_id": "2504.13684",
+      "url": "https://arxiv.org/abs/2504.13684v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Factually: Exploring Wearable Fact-Checking for Augmented Truth Discernment",
+      "external_id": "2504.17204",
+      "url": "https://arxiv.org/abs/2504.17204v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Inject or Navigate? Token-Efficient Retrieval for LLM Analysis of Transactional Legal Documents",
+      "external_id": "W7167682060",
+      "url": "https://arxiv.org/abs/2607.05764"
+    },
+    {
+      "source": "arxiv",
+      "title": "Telco-RAG: Navigating the Challenges of Retrieval-Augmented Language Models for Telecommunications",
+      "external_id": "2404.15939",
+      "url": "https://arxiv.org/abs/2404.15939v3"
+    },
+    {
+      "source": "openalex",
+      "title": "Blank Spots in the Map of Human Skin: The Challenge for Xenotransplantation",
+      "external_id": "W4385805832",
+      "url": "https://doi.org/10.3390/ijms241612769"
+    },
+    {
+      "source": "arxiv",
+      "title": "Emergence of Agentic AI: A Review on Evolution, Background, Working Principles, Applications, Adoption Factors, and Future Research Directions",
+      "external_id": "2608.18110",
+      "url": "https://arxiv.org/abs/2608.18110v1"
+    },
+    {
+      "source": "openalex",
+      "title": "SentryLine: Evidence-Grounded Question Answering over Evolving Documents in Oncology Care",
+      "external_id": "W7212061304",
+      "url": "https://arxiv.org/abs/2609.08364"
+    },
+    {
+      "source": "arxiv",
+      "title": "Dimming Down LED: An Open-source Threshold Implementation on Light Encryption Device (LED) Block Cipher",
+      "external_id": "2108.12079",
+      "url": "https://arxiv.org/abs/2108.12079v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Conversational Query Engine for Mixed-Modality Heterogeneous Enterprise Data Sources",
+      "external_id": "W7166732823",
+      "url": "https://arxiv.org/abs/2606.28370"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "978ef00d-df25-445d-bc21-f29b4b197f84",
+      "document_id": "de29108d-f6f5-415f-ae6e-2918557e330a",
+      "chunk_id": "963c916f-722e-4640-b757-7c1f5b2619a3",
+      "source": "sample_research.pdf",
+      "title": "Hybrid Retrieval Notes",
+      "page": 1,
+      "section": "Hybrid Retrieval Notes",
+      "text": "Hybrid Retrieval Notes\n\nIntroduction\n\nThis document describes BM25, dense vectors, and reciprocal rank fusion.\n\nMethods\n\nChunks retain page numbers and section metadata for provenance.",
+      "retrieval_score": -1.6288750171661377,
+      "retrieval_method": "hybrid_rerank",
+      "source_metadata": {
+        "filename": "sample_research.pdf",
+        "source_type": "pdf",
+        "knowledge_scope": "PUBLIC_RESEARCH",
+        "document_kind": "pdf",
+        "project_id": null,
+        "ingestion_timestamp": "2026-10-06T16:11:44.999421+00:00",
+        "processed_path": "/Users/karan_bhosle/Karanverse-personal AI Research Lab/data/processed/de29108d-f6f5-415f-ae6e-2918557e330a"
+      }
+    },
+    {
+      "evidence_id": "ff7c005f-8f9d-4d28-a974-53af4ead1115",
+      "document_id": "de29108d-f6f5-415f-ae6e-2918557e330a",
+      "chunk_id": "963c916f-722e-4640-b757-7c1f5b2619a3",
+      "source": "sample_research.pdf",
+      "title": "Hybrid Retrieval Notes",
+      "page": 1,
+      "section": "Hybrid Retrieval Notes",
+      "text": "Hybrid Retrieval Notes\n\nIntroduction\n\nThis document describes BM25, dense vectors, and reciprocal rank fusion.\n\nMethods\n\nChunks retain page numbers and section metadata for provenance.",
+      "retrieval_score": -1.6288750171661377,
+      "retrieval_method": "hybrid_rerank",
+      "source_metadata": {
+        "filename": "sample_research.pdf",
+        "source_type": "pdf",
+        "knowledge_scope": "PUBLIC_RESEARCH",
+        "document_kind": "pdf",
+        "project_id": null,
+        "ingestion_timestamp": "2026-10-06T16:11:44.999421+00:00",
+        "processed_path": "/Users/karan_bhosle/Karanverse-personal AI Research Lab/data/processed/de29108d-f6f5-415f-ae6e-2918557e330a"
+      }
+    }
+  ],
+  "report": {
+    "question": "what is vectorless rag ?",
+    "executive_summary": "The available local evidence describes BM25, dense vectors, and reciprocal rank fusion as components of hybrid retrieval methods.[1][2]",
+    "key_findings": [
+      {
+        "statement": "BM25 is described as a sparse retrieval method in the document.",
+        "basis": "evidence",
+        "evidence_ids": [
+          "978ef00d-df25-445d-bc21-f29b4b197f84"
+        ],
+        "citation_labels": [
+          "[1]"
+        ],
+        "confidence": "medium",
+        "uncertainty": null
+      },
+      {
+        "statement": "Dense vectors are mentioned as a retrieval approach in the document.",
+        "basis": "evidence",
+        "evidence_ids": [
+          "978ef00d-df25-445d-bc21-f29b4b197f84"
+        ],
+        "citation_labels": [
+          "[1]"
+        ],
+        "confidence": "medium",
+        "uncertainty": null
+      },
+      {
+        "statement": "Reciprocal rank fusion is noted as a method to combine retrieval results.",
+        "basis": "evidence",
+        "evidence_ids": [
+          "978ef00d-df25-445d-bc21-f29b4b197f84"
+        ],
+        "citation_labels": [
+          "[1]"
+        ],
+        "confidence": "medium",
+        "uncertainty": null
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "978ef00d-df25-445d-bc21-f29b4b197f84",
+        "citation_label": "[1]",
+        "document_id": "de29108d-f6f5-415f-ae6e-2918557e330a",
+        "chunk_id": "963c916f-722e-4640-b757-7c1f5b2619a3",
+        "title": "Hybrid Retrieval Notes",
+        "excerpt": "Hybrid Retrieval Notes\n\nIntroduction\n\nThis document describes BM25, dense vectors, and reciprocal rank fusion.\n\nMethods\n\nChunks retain page numbers and section metadata for provenance.",
+        "page": 1,
+        "section": "Hybrid Retrieval Notes",
+        "retrieval_score": -1.6288750171661377,
+        "source_filename": "sample_research.pdf"
+      },
+      {
+        "evidence_id": "ff7c005f-8f9d-4d28-a974-53af4ead1115",
+        "citation_label": "[2]",
+        "document_id": "de29108d-f6f5-415f-ae6e-2918557e330a",
+        "chunk_id": "963c916f-722e-4640-b757-7c1f5b2619a3",
+        "title": "Hybrid Retrieval Notes",
+        "excerpt": "Hybrid Retrieval Notes\n\nIntroduction\n\nThis document describes BM25, dense vectors, and reciprocal rank fusion.\n\nMethods\n\nChunks retain page numbers and section metadata for provenance.",
+        "page": 1,
+        "section": "Hybrid Retrieval Notes",
+        "retrieval_score": -1.6288750171661377,
+        "source_filename": "sample_research.pdf"
+      }
+    ],
+    "contradictions": [
+      {
+        "description": "The two evidence chunks are identical, indicating duplicate content.",
+        "evidence_ids": [
+          "978ef00d-df25-445d-bc21-f29b4b197f84",
+          "ff7c005f-8f9d-4d28-a974-53af4ead1115"
+        ],
+        "citation_labels": [
+          "[1]",
+          "[2]"
+        ],
+        "uncertainty": null
+      }
+    ],
+    "limitations": [
+      "The local evidence does not provide definitions, architectures, or performance details specific to vectorless RAG.",
+      "The local corpus is highly sparse, containing only one document with two identical chunks from a generic 'Hybrid Retrieval Notes' PDF.",
+      "The external papers are predominantly recent arXiv preprints (2024-2026) with zero or very low citation counts, indicating limited peer review or established impact in the specific niche of vectorless RAG.",
+      "There is a lack of high-quality survey papers, peer-reviewed comparative benchmarks, or established academic theses on vectorless RAG in the provided bundle.",
+      "Any specific definition or underlying principle of vectorless RAG compared to traditional vector-based RAG.",
+      "Specific algorithmic approaches or architectures that enable retrieval without dense vector representations.",
+      "Primary use cases or domains where vectorless RAG demonstrates advantages.",
+      "Evaluation metrics, benchmarks, or comparative studies measuring the effectiveness of vectorless RAG.",
+      "Main limitations, challenges, or open problems associated with vectorless RAG.",
+      "Future research trends and potential improvements identified in the literature.",
+      "Research gap: The bundle lacks a comprehensive definition and conceptual framework for vectorless RAG.",
+      "Research gap: There is no detailed explanation of how retrieval is performed without dense vector embeddings or vector databases.",
+      "Research gap: No empirical data, benchmark datasets, or evaluation results are provided to assess the performance of vectorless RAG.",
+      "Research gap: The limitations, challenges, and open research problems of vectorless RAG are entirely unaddressed in the local evidence.",
+      "Research gap: Future research directions and potential improvements are not discussed in the provided excerpts.",
+      "Evidence sufficiency: The local evidence (evidence_ids: 978ef00d-df25-445d-bc21-f29b4b197f84, ff7c005f-8f9d-4d28-a974-53af4ead1115) is extremely sparse and generic, consisting of a single document ('Hybrid Retrieval Notes') that only introduces BM25, dense vectors, and reciprocal rank fusion at a high level. It does not provide any detailed definitions, architectural descriptions, use case analyses, evaluation metrics, or discussions on the limitations and future directions of vectorless RAG. Therefore, the evidence is insufficient to answer the research question."
+    ],
+    "practical_recommendations": [
+      {
+        "recommendation": "Conduct a targeted literature review to obtain detailed descriptions of vectorless RAG methodologies such as keyword-based agentic retrieval.",
+        "basis": "inference",
+        "evidence_ids": [],
+        "citation_labels": [],
+        "confidence": "medium"
+      }
+    ],
+    "open_questions": [
+      "What is the precise definition and underlying principle of vectorless RAG compared to traditional vector-based RAG?",
+      "Which algorithmic approaches enable retrieval without dense vector representations?",
+      "What are the primary use cases where vectorless RAG demonstrates advantages?",
+      "How is the effectiveness of vectorless RAG measured and evaluated?",
+      "What are the main limitations and open problems associated with vectorless RAG?",
+      "What future research trends are identified for vectorless RAG?",
+      "Detailed technical architectures and algorithmic workflows for vectorless retrieval (e.g., keyword-based agentic retrieval, graph-based retrieval without embeddings).",
+      "Comparative performance data and benchmark results against traditional vector-based RAG.",
+      "Domain-specific case studies or applications of vectorless RAG in real-world scenarios.",
+      "Critical analysis of the trade-offs (accuracy, latency, cost) between vectorless and vector-based approaches.",
+      "What is vectorless RAG definition and principles",
+      "architectures for retrieval without dense embeddings",
+      "keyword-based agentic RAG vs vector RAG performance",
+      "benchmarking vectorless RAG in healthcare or other domains",
+      "limitations and challenges of embedding-free retrieval augmented generation",
+      "future directions for vectorless RAG systems"
+    ],
+    "references": [
+      {
+        "reference_id": "evidence:978ef00d-df25-445d-bc21-f29b4b197f84",
+        "reference_type": "local_evidence",
+        "title": "Hybrid Retrieval Notes",
+        "citation_label": "[1]",
+        "evidence_id": "978ef00d-df25-445d-bc21-f29b4b197f84",
+        "external_source": null,
+        "external_id": null,
+        "url": null
+      },
+      {
+        "reference_id": "evidence:ff7c005f-8f9d-4d28-a974-53af4ead1115",
+        "reference_type": "local_evidence",
+        "title": "Hybrid Retrieval Notes",
+        "citation_label": "[2]",
+        "evidence_id": "ff7c005f-8f9d-4d28-a974-53af4ead1115",
+        "external_source": null,
+        "external_id": null,
+        "url": null
+      },
+      {
+        "reference_id": "arxiv:2511.22858",
+        "reference_type": "external_literature",
+        "title": "RAG System for Supporting Japanese Litigation Procedures: Faithful Response Generation Complying with Legal Norms",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2511.22858",
+        "url": "https://arxiv.org/abs/2511.22858v1"
+      },
+      {
+        "reference_id": "arxiv:2511.07494",
+        "reference_type": "external_literature",
+        "title": "Roman Galactic Plane Survey Definition Committee Report",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2511.07494",
+        "url": "https://arxiv.org/abs/2511.07494v1"
+      },
+      {
+        "reference_id": "arxiv:2401.15391",
+        "reference_type": "external_literature",
+        "title": "MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2401.15391",
+        "url": "https://arxiv.org/abs/2401.15391v1"
+      },
+      {
+        "reference_id": "arxiv:2412.12881",
+        "reference_type": "external_literature",
+        "title": "RAG-Star: Enhancing Deliberative Reasoning with Retrieval Augmented Verification and Refinement",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2412.12881",
+        "url": "https://arxiv.org/abs/2412.12881v1"
+      },
+      {
+        "reference_id": "arxiv:2402.07483",
+        "reference_type": "external_literature",
+        "title": "T-RAG: Lessons from the LLM Trenches",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2402.07483",
+        "url": "https://arxiv.org/abs/2402.07483v2"
+      },
+      {
+        "reference_id": "openalex:W7202168689",
+        "reference_type": "external_literature",
+        "title": "VDGR-RAG: Vectors, Directories, Graphs, and Reflection Are All You Need for Unified Reasoning over Hierarchical Enterprise Knowledge",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7202168689",
+        "url": "https://arxiv.org/abs/2608.07994"
+      },
+      {
+        "reference_id": "openalex:W7154751765",
+        "reference_type": "external_literature",
+        "title": "Adaptive Query Routing: A Tier-Based Framework for Hybrid Retrieval Across Financial, Legal, and Medical Documents",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7154751765",
+        "url": "https://arxiv.org/abs/2604.14222"
+      },
+      {
+        "reference_id": "openalex:W7165190586",
+        "reference_type": "external_literature",
+        "title": "MCompassRAG: Topic Metadata as a Semantic Compass for Paragraph-Level Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7165190586",
+        "url": "https://arxiv.org/abs/2606.18508"
+      },
+      {
+        "reference_id": "openalex:W7167628002",
+        "reference_type": "external_literature",
+        "title": "Memory-Orchestrated Semantic System (MOSS): An Auditable Agentic Memory Architecture",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7167628002",
+        "url": "https://arxiv.org/abs/2607.04391"
+      },
+      {
+        "reference_id": "openalex:W7160360704",
+        "reference_type": "external_literature",
+        "title": "LLM-Oriented Information Retrieval: A Denoising-First Perspective",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7160360704",
+        "url": "https://arxiv.org/abs/2605.00505"
+      },
+      {
+        "reference_id": "arxiv:2506.06962",
+        "reference_type": "external_literature",
+        "title": "AR-RAG: Autoregressive Retrieval Augmentation for Image Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2506.06962",
+        "url": "https://arxiv.org/abs/2506.06962v3"
+      },
+      {
+        "reference_id": "arxiv:2402.12317",
+        "reference_type": "external_literature",
+        "title": "EVOR: Evolving Retrieval for Code Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2402.12317",
+        "url": "https://arxiv.org/abs/2402.12317v2"
+      },
+      {
+        "reference_id": "arxiv:2411.18583",
+        "reference_type": "external_literature",
+        "title": "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augmented Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2411.18583",
+        "url": "https://arxiv.org/abs/2411.18583v1"
+      },
+      {
+        "reference_id": "arxiv:2502.00306",
+        "reference_type": "external_literature",
+        "title": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2502.00306",
+        "url": "https://arxiv.org/abs/2502.00306v2"
+      },
+      {
+        "reference_id": "arxiv:2601.05264",
+        "reference_type": "external_literature",
+        "title": "Engineering the RAG Stack: A Comprehensive Review of the Architecture and Trust Frameworks for Retrieval-Augmented Generation Systems",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2601.05264",
+        "url": "https://arxiv.org/abs/2601.05264v1"
+      },
+      {
+        "reference_id": "openalex:W7171739211",
+        "reference_type": "external_literature",
+        "title": "Benchmarking Vectorless vs Hybrid RAG in Healthcare AI",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7171739211",
+        "url": "https://doi.org/10.2139/ssrn.6951879"
+      },
+      {
+        "reference_id": "openalex:W7171524164",
+        "reference_type": "external_literature",
+        "title": "VecTree-RAG: An Agentic Retrieval-Augmented Generation Framework Combining Vector and Tree Retrieval for Efficiency and Accuracy",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7171524164",
+        "url": "https://arxiv.org/abs/2607.23006"
+      },
+      {
+        "reference_id": "openalex:W7171728473",
+        "reference_type": "external_literature",
+        "title": "HVM-GraphRAG: Holistic-View Multimodal Graph Retrieval-Augmented Generation on Complex Document",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7171728473",
+        "url": "https://arxiv.org/abs/2607.24861"
+      },
+      {
+        "reference_id": "arxiv:2504.01346",
+        "reference_type": "external_literature",
+        "title": "RAG over Tables: Hierarchical Memory Index, Multi-Stage Retrieval, and Benchmarking",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2504.01346",
+        "url": "https://arxiv.org/abs/2504.01346v4"
+      },
+      {
+        "reference_id": "openalex:W7133198032",
+        "reference_type": "external_literature",
+        "title": "Keyword search is all you need: Achieving RAG-Level Performance without vector databases using agentic tool use",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7133198032",
+        "url": "http://arxiv.org/abs/2602.23368"
+      },
+      {
+        "reference_id": "openalex:W7143484776",
+        "reference_type": "external_literature",
+        "title": "Graph RAG vs. Vector RAG: A Performance Comparison in Response Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7143484776",
+        "url": "https://doi.org/10.55592/cilamce2025.v5i.14006"
+      },
+      {
+        "reference_id": "openalex:W7140314688",
+        "reference_type": "external_literature",
+        "title": "Index-RAG: Storing Text Locations in Vector Databases for Question-Answering Tasks",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7140314688",
+        "url": "https://doi.org/10.20944/preprints202603.2025.v1"
+      },
+      {
+        "reference_id": "openalex:W7135051463",
+        "reference_type": "external_literature",
+        "title": "Driving-RAG: Driving Scenarios Embedding, Search, and RAG Applications",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7135051463",
+        "url": "https://doi.org/10.1007/s42154-025-00405-4"
+      },
+      {
+        "reference_id": "openalex:W4416116862",
+        "reference_type": "external_literature",
+        "title": "Driving-RAG: Driving Scenarios Embedding, Search, and RAG Applications",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4416116862",
+        "url": "http://arxiv.org/abs/2504.04419"
+      },
+      {
+        "reference_id": "arxiv:1811.08772",
+        "reference_type": "external_literature",
+        "title": "Overcoming low-utility facets for complex answer retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "1811.08772",
+        "url": "https://arxiv.org/abs/1811.08772v1"
+      },
+      {
+        "reference_id": "arxiv:2108.06279",
+        "reference_type": "external_literature",
+        "title": "On Single and Multiple Representations in Dense Passage Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2108.06279",
+        "url": "https://arxiv.org/abs/2108.06279v2"
+      },
+      {
+        "reference_id": "arxiv:2205.02303",
+        "reference_type": "external_literature",
+        "title": "Analysing the Robustness of Dual Encoders for Dense Retrieval Against Misspellings",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2205.02303",
+        "url": "https://arxiv.org/abs/2205.02303v1"
+      },
+      {
+        "reference_id": "arxiv:2602.00899",
+        "reference_type": "external_literature",
+        "title": "Domain-Adaptive and Scalable Dense Retrieval for Content-Based Recommendation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2602.00899",
+        "url": "https://arxiv.org/abs/2602.00899v1"
+      },
+      {
+        "reference_id": "arxiv:2403.10939",
+        "reference_type": "external_literature",
+        "title": "Improving the Robustness of Dense Retrievers Against Typos via Multi-Positive Contrastive Learning",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2403.10939",
+        "url": "https://arxiv.org/abs/2403.10939v1"
+      },
+      {
+        "reference_id": "openalex:W3015883388",
+        "reference_type": "external_literature",
+        "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W3015883388",
+        "url": "https://doi.org/10.18653/v1/2020.emnlp-main.550"
+      },
+      {
+        "reference_id": "openalex:W3157758108",
+        "reference_type": "external_literature",
+        "title": "Sparse, Dense, and Attentional Representations for Text Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W3157758108",
+        "url": "https://doi.org/10.1162/tacl_a_00369"
+      },
+      {
+        "reference_id": "openalex:W4320813768",
+        "reference_type": "external_literature",
+        "title": "Unsupervised Dense Information Retrieval with Contrastive Learning",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4320813768",
+        "url": "http://arxiv.org/abs/2112.09118"
+      },
+      {
+        "reference_id": "openalex:W3211633257",
+        "reference_type": "external_literature",
+        "title": "Condenser: a Pre-training Architecture for Dense Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W3211633257",
+        "url": "https://doi.org/10.18653/v1/2021.emnlp-main.75"
+      },
+      {
+        "reference_id": "openalex:W3021282678",
+        "reference_type": "external_literature",
+        "title": "Sparse, Dense, and Attentional Representations for Text Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W3021282678",
+        "url": "http://arxiv.org/abs/2005.00181"
+      },
+      {
+        "reference_id": "arxiv:2504.05181",
+        "reference_type": "external_literature",
+        "title": "Lightweight and Direct Document Relevance Optimization for Generative Information Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2504.05181",
+        "url": "https://arxiv.org/abs/2504.05181v2"
+      },
+      {
+        "reference_id": "arxiv:1601.04605",
+        "reference_type": "external_literature",
+        "title": "Dynamic Information Retrieval: Theoretical Framework and Application",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "1601.04605",
+        "url": "https://arxiv.org/abs/1601.04605v1"
+      },
+      {
+        "reference_id": "arxiv:1501.02646",
+        "reference_type": "external_literature",
+        "title": "Bibliometric-enhanced Information Retrieval: 2nd International BIR Workshop",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "1501.02646",
+        "url": "https://arxiv.org/abs/1501.02646v1"
+      },
+      {
+        "reference_id": "arxiv:2210.09877",
+        "reference_type": "external_literature",
+        "title": "Towards Proactive Information Retrieval in Noisy Text with Wikipedia Concepts",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2210.09877",
+        "url": "https://arxiv.org/abs/2210.09877v1"
+      },
+      {
+        "reference_id": "openalex:W7171670812",
+        "reference_type": "external_literature",
+        "title": "Agent Retrieval Bench: Evaluating Repository Context Retrieval for Coding Agents",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7171670812",
+        "url": "https://arxiv.org/abs/2607.24882"
+      },
+      {
+        "reference_id": "arxiv:2207.01888",
+        "reference_type": "external_literature",
+        "title": "Keyword Extraction in Scientific Documents",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2207.01888",
+        "url": "https://arxiv.org/abs/2207.01888v2"
+      },
+      {
+        "reference_id": "openalex:W4412887019",
+        "reference_type": "external_literature",
+        "title": "CiteFix: Enhancing RAG Accuracy Through Post-Processing Citation Correction",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4412887019",
+        "url": "https://doi.org/10.18653/v1/2025.acl-industry.23"
+      },
+      {
+        "reference_id": "openalex:W7132870698",
+        "reference_type": "external_literature",
+        "title": "Computational Exploration of Sage Agastya in Indian Epics Using NLP and RAG",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7132870698",
+        "url": "https://trepo.tuni.fi/handle/10024/233082"
+      },
+      {
+        "reference_id": "openalex:W4412125826",
+        "reference_type": "external_literature",
+        "title": "The Evolution of Search Engines: From Keyword Matching to AI-Powered Understandin",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4412125826",
+        "url": "https://doi.org/10.5120/ijca2025925279"
+      },
+      {
+        "reference_id": "openalex:W4403420914",
+        "reference_type": "external_literature",
+        "title": "Blended RAG: Improving RAG (Retriever-Augmented Generation) Accuracy with Semantic Search and Hybrid Query-Based Retrievers",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4403420914",
+        "url": "https://doi.org/10.1109/mipr62202.2024.00031"
+      },
+      {
+        "reference_id": "openalex:W7168300990",
+        "reference_type": "external_literature",
+        "title": "NGM-RAG: Neural Graph Matching based Retrieval-Augmented Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7168300990",
+        "url": "https://arxiv.org/abs/2607.11159"
+      },
+      {
+        "reference_id": "openalex:W7165177996",
+        "reference_type": "external_literature",
+        "title": "SproutRAG: Attention-Guided Tree Search with Progressive Embeddings for Long-Document RAG",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7165177996",
+        "url": "https://arxiv.org/abs/2606.18381"
+      },
+      {
+        "reference_id": "openalex:W7160791439",
+        "reference_type": "external_literature",
+        "title": "Odgovarjanje na vprašanja iz starih virov z velikimi jezikovnimi modeli",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7160791439",
+        "url": "https://plus.cobiss.net/cobiss/si/sl/bib/277475587"
+      },
+      {
+        "reference_id": "openalex:W7130561399",
+        "reference_type": "external_literature",
+        "title": "Large Language Models for Assisting American College Applications",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7130561399",
+        "url": "http://arxiv.org/abs/2602.15850"
+      },
+      {
+        "reference_id": "arxiv:2607.26191",
+        "reference_type": "external_literature",
+        "title": "Position: Evaluation Scores Are Perishable Knowledge Claims",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2607.26191",
+        "url": "https://arxiv.org/abs/2607.26191v1"
+      },
+      {
+        "reference_id": "arxiv:2607.28282",
+        "reference_type": "external_literature",
+        "title": "(Towards) Scalable Reliable Automated Evaluation with Large Language Models",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2607.28282",
+        "url": "https://arxiv.org/abs/2607.28282v1"
+      },
+      {
+        "reference_id": "arxiv:2510.25518",
+        "reference_type": "external_literature",
+        "title": "Retrieval Augmented Generation (RAG) for Fintech: Agentic Design and Evaluation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2510.25518",
+        "url": "https://arxiv.org/abs/2510.25518v1"
+      },
+      {
+        "reference_id": "openalex:W7213530082",
+        "reference_type": "external_literature",
+        "title": "Structure-Guided Retrieval with LLM-Directed Table-of-Contents Navigation and Precomputed Semantic Contagion: A Hybrid RAG Architecture",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7213530082",
+        "url": "https://doi.org/10.2139/ssrn.7470078"
+      },
+      {
+        "reference_id": "openalex:W7213441038",
+        "reference_type": "external_literature",
+        "title": "Structure-Guided Retrieval with LLM-Directed Table-of-Contents Navigation and Precomputed Semantic Contagion: A Hybrid RAG Architecture",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7213441038",
+        "url": "https://doi.org/10.2139/ssrn.7467558"
+      },
+      {
+        "reference_id": "arxiv:2406.04744",
+        "reference_type": "external_literature",
+        "title": "CRAG -- Comprehensive RAG Benchmark",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2406.04744",
+        "url": "https://arxiv.org/abs/2406.04744v2"
+      },
+      {
+        "reference_id": "openalex:W7162576191",
+        "reference_type": "external_literature",
+        "title": "Rethinking Agentic RAG: Toward LLM-Driven Logical Retrieval Beyond Embeddings",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7162576191",
+        "url": "https://arxiv.org/abs/2605.27123"
+      },
+      {
+        "reference_id": "arxiv:2006.06026",
+        "reference_type": "external_literature",
+        "title": "Report from the NSF Future Directions Workshop, Toward User-Oriented Agents: Research Directions and Challenges",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2006.06026",
+        "url": "https://arxiv.org/abs/2006.06026v1"
+      },
+      {
+        "reference_id": "openalex:W7204159452",
+        "reference_type": "external_literature",
+        "title": "Semantic Compression Trees: Multi-Resolution Knowledge Retrieval via Hierarchical Semantic Residuals",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7204159452",
+        "url": "https://arxiv.org/abs/2608.21610"
+      },
+      {
+        "reference_id": "openalex:W7214804757",
+        "reference_type": "external_literature",
+        "title": "Robust Hierarchical Structures for Agentic Document Analysis",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7214804757",
+        "url": "https://arxiv.org/abs/2609.33322"
+      },
+      {
+        "reference_id": "openalex:W2888868929",
+        "reference_type": "external_literature",
+        "title": "Achilles and The Batman on the Plane of Immanence: Deconstructing Heroic Models",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W2888868929",
+        "url": "https://surface.syr.edu/etd/799"
+      },
+      {
+        "reference_id": "arxiv:2602.23368",
+        "reference_type": "external_literature",
+        "title": "Keyword search is all you need: Achieving RAG-Level Performance without vector databases using agentic tool use",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2602.23368",
+        "url": "https://arxiv.org/abs/2602.23368v1"
+      },
+      {
+        "reference_id": "arxiv:1108.4516",
+        "reference_type": "external_literature",
+        "title": "Scalable Continual Top-k Keyword Search in Relational Databases",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "1108.4516",
+        "url": "https://arxiv.org/abs/1108.4516v1"
+      },
+      {
+        "reference_id": "arxiv:2510.20296",
+        "reference_type": "external_literature",
+        "title": "RAG-Stack: Co-Optimizing RAG Quality and Performance From the Vector Database Perspective",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2510.20296",
+        "url": "https://arxiv.org/abs/2510.20296v1"
+      },
+      {
+        "reference_id": "arxiv:0110052v1",
+        "reference_type": "external_literature",
+        "title": "Mragyati : A System for Keyword-based Searching in Databases",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "0110052v1",
+        "url": "https://arxiv.org/abs/cs/0110052v1"
+      },
+      {
+        "reference_id": "openalex:W4411374210",
+        "reference_type": "external_literature",
+        "title": "TigerVector: Supporting Vector Search in Graph Databases for Advanced RAGs",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4411374210",
+        "url": "https://doi.org/10.1145/3722212.3724456"
+      },
+      {
+        "reference_id": "openalex:W4415430955",
+        "reference_type": "external_literature",
+        "title": "RAG on Multimodal Databases: Orchestrating Textual, Vector, and Graph-based Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4415430955",
+        "url": "https://doi.org/10.5753/sbbd_estendido.2025.tutorial3"
+      },
+      {
+        "reference_id": "openalex:W7155488339",
+        "reference_type": "external_literature",
+        "title": "Distributed RAG Architecture for Enterprise Knowledge QA on Databricks",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7155488339",
+        "url": "https://doi.org/10.63282/3050-9416.ijaibdcms-v7i2p117"
+      },
+      {
+        "reference_id": "openalex:W7203613120",
+        "reference_type": "external_literature",
+        "title": "Bridging Generative AI and External Knowledge: A Review of Retrieval-Augmented Generation (RAG) and Vector Database Integration",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7203613120",
+        "url": "https://doi.org/10.47772/ijriss.2026.100700908"
+      },
+      {
+        "reference_id": "arxiv:2503.01763",
+        "reference_type": "external_literature",
+        "title": "Retrieval Models Aren't Tool-Savvy: Benchmarking Tool Retrieval for Large Language Models",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2503.01763",
+        "url": "https://arxiv.org/abs/2503.01763v2"
+      },
+      {
+        "reference_id": "arxiv:2605.05287",
+        "reference_type": "external_literature",
+        "title": "Securing the Agent: Vendor-Neutral, Multitenant Enterprise Retrieval and Tool Use",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2605.05287",
+        "url": "https://arxiv.org/abs/2605.05287v1"
+      },
+      {
+        "reference_id": "arxiv:2111.01762",
+        "reference_type": "external_literature",
+        "title": "AIRCC-Clim: a user-friendly tool for generating regional probabilistic climate change scenarios and risk measures",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2111.01762",
+        "url": "https://arxiv.org/abs/2111.01762v1"
+      },
+      {
+        "reference_id": "arxiv:2610.05750",
+        "reference_type": "external_literature",
+        "title": "Beyond Semantic Similarity: Performance and Costs of Agentic Retrieval for Complex Tasks",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2610.05750",
+        "url": "https://arxiv.org/abs/2610.05750v1"
+      },
+      {
+        "reference_id": "openalex:W7149218288",
+        "reference_type": "external_literature",
+        "title": "Tool-calling Agents for Retrieval-Augmented Complex Question Answering",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7149218288",
+        "url": "https://resolver.obvsg.at/urn:nbn:at:at-ubi:1-195455"
+      },
+      {
+        "reference_id": "openalex:W7169836791",
+        "reference_type": "external_literature",
+        "title": "Adapting Embedding Models for Agent Capability Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7169836791",
+        "url": "https://arxiv.org/abs/2607.17347"
+      },
+      {
+        "reference_id": "openalex:W7117479235",
+        "reference_type": "external_literature",
+        "title": "ReAct Modular Agent: Orchestrating Tool-Use and Retrieval for Financial Workflows",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7117479235",
+        "url": "https://doi.org/10.58190/icisna.2025.138"
+      },
+      {
+        "reference_id": "openalex:W7160692720",
+        "reference_type": "external_literature",
+        "title": "Securing the Agent: Vendor-Neutral, Multitenant Enterprise Retrieval and Tool Use",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7160692720",
+        "url": "https://doi.org/10.1145/3786335.3813145"
+      },
+      {
+        "reference_id": "openalex:W4415945867",
+        "reference_type": "external_literature",
+        "title": "Tool-to-Agent Retrieval: Bridging Tools and Agents for Scalable LLM Multi-Agent Systems",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4415945867",
+        "url": "http://arxiv.org/abs/2511.01854"
+      },
+      {
+        "reference_id": "arxiv:2001.08941",
+        "reference_type": "external_literature",
+        "title": "Symmetries and periodic orbits in simple hybrid Routhian systems",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2001.08941",
+        "url": "https://arxiv.org/abs/2001.08941v1"
+      },
+      {
+        "reference_id": "arxiv:2401.09878",
+        "reference_type": "external_literature",
+        "title": "A Comparison Benchmark for Distributed Hybrid MPC Control Methods: Distributed Vehicle Platooning",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2401.09878",
+        "url": "https://arxiv.org/abs/2401.09878v3"
+      },
+      {
+        "reference_id": "openalex:W7170065854",
+        "reference_type": "external_literature",
+        "title": "FinanceComplexQA: Benchmarking Agentic Reasoning on Industrial-grade Financial Documents",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7170065854",
+        "url": "https://arxiv.org/abs/2607.19238"
+      },
+      {
+        "reference_id": "openalex:W7166643129",
+        "reference_type": "external_literature",
+        "title": "LLM-Guided Planning for Multi-hop Reasoning over Multimodal Nuclear Regulatory Documents",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7166643129",
+        "url": "https://arxiv.org/abs/2606.29399"
+      },
+      {
+        "reference_id": "arxiv:2605.27123",
+        "reference_type": "external_literature",
+        "title": "Rethinking Agentic RAG: Toward LLM-Driven Logical Retrieval Beyond Embeddings",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2605.27123",
+        "url": "https://arxiv.org/abs/2605.27123v1"
+      },
+      {
+        "reference_id": "arxiv:2512.21309",
+        "reference_type": "external_literature",
+        "title": "A Plan Reuse Mechanism for LLM-Driven Agent",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2512.21309",
+        "url": "https://arxiv.org/abs/2512.21309v2"
+      },
+      {
+        "reference_id": "arxiv:1407.5416",
+        "reference_type": "external_literature",
+        "title": "Privacy-Preserving Important Passage Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "1407.5416",
+        "url": "https://arxiv.org/abs/1407.5416v1"
+      },
+      {
+        "reference_id": "arxiv:1906.00041",
+        "reference_type": "external_literature",
+        "title": "Table2Vec: Neural Word and Entity Embeddings for Table Population and Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "1906.00041",
+        "url": "https://arxiv.org/abs/1906.00041v1"
+      },
+      {
+        "reference_id": "openalex:W4408749890",
+        "reference_type": "external_literature",
+        "title": "PropertyGPT: LLM-driven Formal Verification of Smart Contracts through Retrieval-Augmented Property Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4408749890",
+        "url": "https://doi.org/10.14722/ndss.2025.241357"
+      },
+      {
+        "reference_id": "openalex:W7116755151",
+        "reference_type": "external_literature",
+        "title": "SR-LLM: An incremental symbolic regression framework driven by LLM-based retrieval-augmented generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7116755151",
+        "url": "https://doi.org/10.1073/pnas.2516995122"
+      },
+      {
+        "reference_id": "openalex:W7213438376",
+        "reference_type": "external_literature",
+        "title": "Retrieval-Driven Memory Reconsolidation for Long-Term LLM Agents",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7213438376",
+        "url": "https://arxiv.org/abs/2609.16053"
+      },
+      {
+        "reference_id": "openalex:W4392240262",
+        "reference_type": "external_literature",
+        "title": "Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4392240262",
+        "url": "https://doi.org/10.1145/3649506"
+      },
+      {
+        "reference_id": "openalex:W7213006018",
+        "reference_type": "external_literature",
+        "title": "Beyond Vector Similarity: Hierarchical Context-Aware Graph RAG vs Standard RAG in Enterprise Code Migration",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7213006018",
+        "url": "https://arxiv.org/abs/2609.12464"
+      },
+      {
+        "reference_id": "openalex:W7124117426",
+        "reference_type": "external_literature",
+        "title": "Is Agentic RAG worth it? An experimental comparison of RAG approaches",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7124117426",
+        "url": "https://arxiv.org/abs/2601.07711"
+      },
+      {
+        "reference_id": "openalex:W7166881024",
+        "reference_type": "external_literature",
+        "title": "Is Agentic RAG worth it? An experimental comparison of RAG approaches",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7166881024",
+        "url": "https://doi.org/10.18653/v1/2026.acl-industry.5"
+      },
+      {
+        "reference_id": "arxiv:1508.02496",
+        "reference_type": "external_literature",
+        "title": "A Practical Guide to CNNs and Fisher Vectors for Image Instance Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "1508.02496",
+        "url": "https://arxiv.org/abs/1508.02496v3"
+      },
+      {
+        "reference_id": "arxiv:2201.01614",
+        "reference_type": "external_literature",
+        "title": "PARM: A Paragraph Aggregation Retrieval Model for Dense Document-to-Document Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2201.01614",
+        "url": "https://arxiv.org/abs/2201.01614v2"
+      },
+      {
+        "reference_id": "arxiv:2404.00684",
+        "reference_type": "external_literature",
+        "title": "Generative Retrieval as Multi-Vector Dense Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2404.00684",
+        "url": "https://arxiv.org/abs/2404.00684v1"
+      },
+      {
+        "reference_id": "openalex:W7203650216",
+        "reference_type": "external_literature",
+        "title": "Retrieval Grounding Latent Reasoning for Dense Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7203650216",
+        "url": "https://arxiv.org/abs/2608.14107"
+      },
+      {
+        "reference_id": "openalex:W7162438838",
+        "reference_type": "external_literature",
+        "title": "MimirRAG: A Multi-Agent RAG Framework for Financial Data Retrieval with Metadata Integration",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7162438838",
+        "url": "https://arxiv.org/abs/2605.25030"
+      },
+      {
+        "reference_id": "openalex:W4417142350",
+        "reference_type": "external_literature",
+        "title": "A Systematic Framework for Enterprise Knowledge Retrieval: Leveraging LLM-Generated Metadata to Enhance RAG Systems",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4417142350",
+        "url": "https://doi.org/10.1109/cai68641.2026.11536510"
+      },
+      {
+        "reference_id": "arxiv:2504.13684",
+        "reference_type": "external_literature",
+        "title": "Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2504.13684",
+        "url": "https://arxiv.org/abs/2504.13684v1"
+      },
+      {
+        "reference_id": "arxiv:2504.17204",
+        "reference_type": "external_literature",
+        "title": "Factually: Exploring Wearable Fact-Checking for Augmented Truth Discernment",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2504.17204",
+        "url": "https://arxiv.org/abs/2504.17204v1"
+      },
+      {
+        "reference_id": "openalex:W7167682060",
+        "reference_type": "external_literature",
+        "title": "Inject or Navigate? Token-Efficient Retrieval for LLM Analysis of Transactional Legal Documents",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7167682060",
+        "url": "https://arxiv.org/abs/2607.05764"
+      },
+      {
+        "reference_id": "arxiv:2404.15939",
+        "reference_type": "external_literature",
+        "title": "Telco-RAG: Navigating the Challenges of Retrieval-Augmented Language Models for Telecommunications",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2404.15939",
+        "url": "https://arxiv.org/abs/2404.15939v3"
+      },
+      {
+        "reference_id": "openalex:W4385805832",
+        "reference_type": "external_literature",
+        "title": "Blank Spots in the Map of Human Skin: The Challenge for Xenotransplantation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4385805832",
+        "url": "https://doi.org/10.3390/ijms241612769"
+      },
+      {
+        "reference_id": "arxiv:2608.18110",
+        "reference_type": "external_literature",
+        "title": "Emergence of Agentic AI: A Review on Evolution, Background, Working Principles, Applications, Adoption Factors, and Future Research Directions",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2608.18110",
+        "url": "https://arxiv.org/abs/2608.18110v1"
+      },
+      {
+        "reference_id": "openalex:W7212061304",
+        "reference_type": "external_literature",
+        "title": "SentryLine: Evidence-Grounded Question Answering over Evolving Documents in Oncology Care",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7212061304",
+        "url": "https://arxiv.org/abs/2609.08364"
+      },
+      {
+        "reference_id": "arxiv:2108.12079",
+        "reference_type": "external_literature",
+        "title": "Dimming Down LED: An Open-source Threshold Implementation on Light Encryption Device (LED) Block Cipher",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2108.12079",
+        "url": "https://arxiv.org/abs/2108.12079v1"
+      },
+      {
+        "reference_id": "openalex:W7166732823",
+        "reference_type": "external_literature",
+        "title": "Conversational Query Engine for Mixed-Modality Heterogeneous Enterprise Data Sources",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7166732823",
+        "url": "https://arxiv.org/abs/2606.28370"
+      }
+    ],
+    "uncertainty_notes": [
+      "Claims about vectorless RAG are uncertain due to absence of supporting local evidence.",
+      "Overall evidence coverage is limited; conclusions should be treated cautiously."
+    ]
+  },
+  "citations": [
+    {
+      "citation_number": 1,
+      "label": "[1]",
+      "evidence_id": "978ef00d-df25-445d-bc21-f29b4b197f84",
+      "claim_text": null
+    }
+  ],
+  "conclusions": [
+    "BM25 is described as a sparse retrieval method in the document.",
+    "Dense vectors are mentioned as a retrieval approach in the document.",
+    "Reciprocal rank fusion is noted as a method to combine retrieval results."
+  ],
+  "unresolved_questions": [
+    "What is the precise definition and underlying principle of vectorless RAG compared to traditional vector-based RAG?",
+    "Which algorithmic approaches enable retrieval without dense vector representations?",
+    "What are the primary use cases where vectorless RAG demonstrates advantages?",
+    "How is the effectiveness of vectorless RAG measured and evaluated?",
+    "What are the main limitations and open problems associated with vectorless RAG?",
+    "What future research trends are identified for vectorless RAG?",
+    "Detailed technical architectures and algorithmic workflows for vectorless retrieval (e.g., keyword-based agentic retrieval, graph-based retrieval without embeddings).",
+    "Comparative performance data and benchmark results against traditional vector-based RAG.",
+    "Domain-specific case studies or applications of vectorless RAG in real-world scenarios.",
+    "Critical analysis of the trade-offs (accuracy, latency, cost) between vectorless and vector-based approaches.",
+    "What is vectorless RAG definition and principles",
+    "architectures for retrieval without dense embeddings",
+    "keyword-based agentic RAG vs vector RAG performance",
+    "benchmarking vectorless RAG in healthcare or other domains",
+    "limitations and challenges of embedding-free retrieval augmented generation",
+    "future directions for vectorless RAG systems"
+  ],
+  "critique": {
+    "question": "what is vectorless rag ?",
+    "evidence_sufficient": false,
+    "source_quality": [
+      "The local corpus is highly sparse, containing only one document with two identical chunks from a generic 'Hybrid Retrieval Notes' PDF.",
+      "The external papers are predominantly recent arXiv preprints (2024-2026) with zero or very low citation counts, indicating limited peer review or established impact in the specific niche of vectorless RAG.",
+      "There is a lack of high-quality survey papers, peer-reviewed comparative benchmarks, or established academic theses on vectorless RAG in the provided bundle."
+    ],
+    "conflicting_evidence": [],
+    "unsupported_claims": [
+      "Any specific definition or underlying principle of vectorless RAG compared to traditional vector-based RAG.",
+      "Specific algorithmic approaches or architectures that enable retrieval without dense vector representations.",
+      "Primary use cases or domains where vectorless RAG demonstrates advantages.",
+      "Evaluation metrics, benchmarks, or comparative studies measuring the effectiveness of vectorless RAG.",
+      "Main limitations, challenges, or open problems associated with vectorless RAG.",
+      "Future research trends and potential improvements identified in the literature."
+    ],
+    "missing_perspectives": [
+      "Detailed technical architectures and algorithmic workflows for vectorless retrieval (e.g., keyword-based agentic retrieval, graph-based retrieval without embeddings).",
+      "Comparative performance data and benchmark results against traditional vector-based RAG.",
+      "Domain-specific case studies or applications of vectorless RAG in real-world scenarios.",
+      "Critical analysis of the trade-offs (accuracy, latency, cost) between vectorless and vector-based approaches."
+    ],
+    "duplicate_evidence": [
+      {
+        "evidence_ids": [
+          "978ef00d-df25-445d-bc21-f29b4b197f84",
+          "ff7c005f-8f9d-4d28-a974-53af4ead1115"
+        ],
+        "reason": "High textual overlap between excerpts"
+      }
+    ],
+    "research_gaps": [
+      "The bundle lacks a comprehensive definition and conceptual framework for vectorless RAG.",
+      "There is no detailed explanation of how retrieval is performed without dense vector embeddings or vector databases.",
+      "No empirical data, benchmark datasets, or evaluation results are provided to assess the performance of vectorless RAG.",
+      "The limitations, challenges, and open research problems of vectorless RAG are entirely unaddressed in the local evidence.",
+      "Future research directions and potential improvements are not discussed in the provided excerpts."
+    ],
+    "additional_research_required": [
+      "Obtain and analyze the full text of 'Keyword search is all you need: Achieving RAG-Level Performance without vector databases using agentic tool use' (arxiv 2602.23368 / openalex W7133198032) to understand keyword-based agentic retrieval.",
+      "Review 'Benchmarking Vectorless vs Hybrid RAG in Healthcare AI' (openalex W7171739211) for domain-specific performance comparisons.",
+      "Examine 'Rethinking Agentic RAG: Toward LLM-Driven Logical Retrieval Beyond Embeddings' (arxiv 2605.27123 / openalex W7162576191) for logical retrieval architectures.",
+      "Search for survey papers or review articles specifically summarizing vectorless or embedding-free RAG systems.",
+      "Identify open-source repositories and benchmark datasets dedicated to vectorless or non-embedding retrieval methods."
+    ],
+    "additional_research_queries": [
+      "What is vectorless RAG definition and principles",
+      "architectures for retrieval without dense embeddings",
+      "keyword-based agentic RAG vs vector RAG performance",
+      "benchmarking vectorless RAG in healthcare or other domains",
+      "limitations and challenges of embedding-free retrieval augmented generation",
+      "future directions for vectorless RAG systems"
+    ],
+    "sufficiency_rationale": "The local evidence (evidence_ids: 978ef00d-df25-445d-bc21-f29b4b197f84, ff7c005f-8f9d-4d28-a974-53af4ead1115) is extremely sparse and generic, consisting of a single document ('Hybrid Retrieval Notes') that only introduces BM25, dense vectors, and reciprocal rank fusion at a high level. It does not provide any detailed definitions, architectural descriptions, use case analyses, evaluation metrics, or discussions on the limitations and future directions of vectorless RAG. Therefore, the evidence is insufficient to answer the research question.",
+    "deterministic_flags": [
+      "duplicate_evidence_detected",
+      "low_retrieval_scores"
+    ]
+  }
+}

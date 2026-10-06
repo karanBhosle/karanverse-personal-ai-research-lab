@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "name": "hybrid-retrieval-smoke",
+  "description": "Starter labels for the processed corpus. Replace expected_evidence chunk_id values with IDs from your index (see data/evaluation/README.md).",
+  "items": [
+    {
+      "id": "hybrid-basics",
+      "question": "How does hybrid retrieval combine BM25 and dense vectors?",
+      "expected_sources": [
+        {
+          "filename": "sample_research.pdf"
+        }
+      ],
+      "expected_evidence": [],
+      "reference_answer": "Hybrid retrieval runs BM25 and dense vector search, then fuses ranked lists with reciprocal rank fusion (RRF).",
+      "retrieval_sub_queries": [
+        "BM25 dense vector hybrid retrieval",
+        "reciprocal rank fusion retrieval"
+      ],
+      "tags": ["retrieval", "hybrid"]
+    },
+    {
+      "id": "chunk-provenance",
+      "question": "What metadata is preserved when documents are chunked?",
+      "expected_sources": [
+        {
+          "filename": "sample_research.pdf"
+        }
+      ],
+      "expected_evidence": [],
+      "reference_answer": "Chunks retain page numbers and section metadata for provenance.",
+      "retrieval_sub_queries": [
+        "page numbers section metadata chunks",
+        "document chunk provenance"
+      ],
+      "tags": ["ingestion", "provenance"]
+    }
+  ]
+}

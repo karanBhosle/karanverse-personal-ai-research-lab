@@ -1,0 +1,1634 @@
+{
+  "research_id": "bc0c2c5f-d223-4bc7-9c34-6ac5bec297fb",
+  "question": "what are the best approches in rag 2026?",
+  "created_at": "2026-10-06T17:53:24.386552Z",
+  "plan": {
+    "original_question": "what are the best approches in rag 2026?",
+    "research_objective": "To systematically investigate and compare the evolving landscape of Retrieval-Augmented Generation (RAG) approaches anticipated to be influential by 2026, with a focus on methodological innovations, evaluation techniques, production scalability, and inherent limitations.",
+    "sub_questions": [
+      "What are the dominant RAG architectures and retrieval strategies emerging in recent literature?",
+      "How do current evaluation frameworks assess the performance and robustness of RAG systems?",
+      "What are the critical factors for deploying RAG in real-world production environments?",
+      "What limitations and challenges are being addressed in state-of-the-art RAG research?"
+    ],
+    "search_queries": [
+      "Retrieval-Augmented Generation methods 2024 2025 survey",
+      "RAG evaluation benchmarks comparison",
+      "Efficient large-scale RAG inference",
+      "Production deployment challenges retrieval augmented generation",
+      "Hybrid retrieval generation models advances",
+      "RAG limitations future directions 2025"
+    ],
+    "required_sources": [
+      "arxiv",
+      "openalex"
+    ],
+    "expected_evidence": [
+      "Recent peer-reviewed papers on novel RAG methodologies",
+      "Comprehensive surveys and meta-analyses of RAG techniques",
+      "Benchmark datasets and standardized evaluation results",
+      "Case studies of RAG systems in industry applications",
+      "Critical analyses of failure modes and limitations in existing approaches"
+    ],
+    "research_strategy": "1. Perform an initial literature scan using the search queries on arxiv and openalex to gather a corpus of relevant papers from the past two years. 2. Filter and prioritize high-impact papers, surveys, and benchmark studies through citation analysis and venue reputation. 3. Categorize identified approaches by method type (e.g., dense retrieval, iterative generation) and extract performance metrics. 4. Compare evaluation frameworks to assess how robustness and accuracy are measured. 5. Review production case studies to document scalability, latency, and integration strategies. 6. Synthesize findings on limitations to identify unresolved challenges and potential research gaps leading into 2026."
+  },
+  "sources": [
+    {
+      "source": "arxiv",
+      "title": "arxiv",
+      "external_id": null,
+      "url": null
+    },
+    {
+      "source": "openalex",
+      "title": "openalex",
+      "external_id": null,
+      "url": null
+    },
+    {
+      "source": "arxiv",
+      "title": "AR-RAG: Autoregressive Retrieval Augmentation for Image Generation",
+      "external_id": "2506.06962",
+      "url": "https://arxiv.org/abs/2506.06962v3"
+    },
+    {
+      "source": "arxiv",
+      "title": "EVOR: Evolving Retrieval for Code Generation",
+      "external_id": "2402.12317",
+      "url": "https://arxiv.org/abs/2402.12317v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "Transformer Tafsir at QIAS 2025 Shared Task: Hybrid Retrieval-Augmented Generation for Islamic Knowledge Question Answering",
+      "external_id": "2509.23793",
+      "url": "https://arxiv.org/abs/2509.23793v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "AIn't Nothing But a Survey? Using Large Language Models for Coding German Open-Ended Survey Responses on Survey Motivation",
+      "external_id": "2506.14634",
+      "url": "https://arxiv.org/abs/2506.14634v3"
+    },
+    {
+      "source": "arxiv",
+      "title": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+      "external_id": "2502.00306",
+      "url": "https://arxiv.org/abs/2502.00306v2"
+    },
+    {
+      "source": "openalex",
+      "title": "Retrieval-Augmented Generation (RAG) Chatbots for Education: A Survey of Applications",
+      "external_id": "W4409348640",
+      "url": "https://doi.org/10.3390/app15084234"
+    },
+    {
+      "source": "openalex",
+      "title": "Retrieval-augmented generation for natural language processing: a survey",
+      "external_id": "W4402854593",
+      "url": "https://doi.org/10.1007/s10462-026-11605-7"
+    },
+    {
+      "source": "openalex",
+      "title": "GRAG: Graph Retrieval-Augmented Generation",
+      "external_id": "W4411120544",
+      "url": "https://doi.org/10.18653/v1/2025.findings-naacl.232"
+    },
+    {
+      "source": "openalex",
+      "title": "Parametric Retrieval Augmented Generation",
+      "external_id": "W4412377217",
+      "url": "https://doi.org/10.1145/3726302.3729957"
+    },
+    {
+      "source": "openalex",
+      "title": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "external_id": "W4411119292",
+      "url": "https://doi.org/10.18653/v1/2025.naacl-long.449"
+    },
+    {
+      "source": "arxiv",
+      "title": "RAG System for Supporting Japanese Litigation Procedures: Faithful Response Generation Complying with Legal Norms",
+      "external_id": "2511.22858",
+      "url": "https://arxiv.org/abs/2511.22858v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries",
+      "external_id": "2401.15391",
+      "url": "https://arxiv.org/abs/2401.15391v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "RAG over Tables: Hierarchical Memory Index, Multi-Stage Retrieval, and Benchmarking",
+      "external_id": "2504.01346",
+      "url": "https://arxiv.org/abs/2504.01346v4"
+    },
+    {
+      "source": "arxiv",
+      "title": "CRAG -- Comprehensive RAG Benchmark",
+      "external_id": "2406.04744",
+      "url": "https://arxiv.org/abs/2406.04744v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "Retrieval Augmented Generation (RAG) for Fintech: Agentic Design and Evaluation",
+      "external_id": "2510.25518",
+      "url": "https://arxiv.org/abs/2510.25518v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Legal RAG Bench: an end-to-end benchmark for legal RAG",
+      "external_id": "W7133297525",
+      "url": "http://arxiv.org/abs/2603.01710"
+    },
+    {
+      "source": "openalex",
+      "title": "OmniEval: An Omnidirectional and Automatic RAG Evaluation Benchmark in Financial Domain",
+      "external_id": "W4416037024",
+      "url": "https://doi.org/10.18653/v1/2025.emnlp-main.292"
+    },
+    {
+      "source": "openalex",
+      "title": "Generating Q&A Benchmarks for RAG Evaluation in Enterprise Settings",
+      "external_id": "W4412886939",
+      "url": "https://doi.org/10.18653/v1/2025.acl-industry.33"
+    },
+    {
+      "source": "openalex",
+      "title": "Generating Leakage-Free Benchmarks for Robust RAG Evaluation",
+      "external_id": "W7160923717",
+      "url": "https://arxiv.org/abs/2605.08838"
+    },
+    {
+      "source": "openalex",
+      "title": "GaRAGe: A Benchmark with Grounding Annotations for RAG Evaluation",
+      "external_id": "W4412888015",
+      "url": "https://doi.org/10.18653/v1/2025.findings-acl.875"
+    },
+    {
+      "source": "arxiv",
+      "title": "MEMe: An Accurate Maximum Entropy Method for Efficient Approximations in Large-Scale Machine Learning",
+      "external_id": "1906.01101",
+      "url": "https://arxiv.org/abs/1906.01101v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "RAG-Star: Enhancing Deliberative Reasoning with Retrieval Augmented Verification and Refinement",
+      "external_id": "2412.12881",
+      "url": "https://arxiv.org/abs/2412.12881v1"
+    },
+    {
+      "source": "openalex",
+      "title": "QCFuse: Query-Centric Cache Fusion for Efficient RAG Inference",
+      "external_id": "W7154014898",
+      "url": "https://arxiv.org/abs/2604.08585"
+    },
+    {
+      "source": "openalex",
+      "title": "Learning to Retrieve, Generate, and Compress: A Unified View of Efficient RAG",
+      "external_id": "W4413300618",
+      "url": "https://doi.org/10.20944/preprints202508.1211.v1"
+    },
+    {
+      "source": "openalex",
+      "title": "CacheWeaver: Cache-Aware Evidence Ordering for Efficient Grounded RAG Inference",
+      "external_id": "W7165394570",
+      "url": "https://arxiv.org/abs/2606.19667"
+    },
+    {
+      "source": "openalex",
+      "title": "GNN-RAG: Graph Neural Retrieval for Efficient Large Language Model Reasoning on Knowledge Graphs",
+      "external_id": "W4412888160",
+      "url": "https://doi.org/10.18653/v1/2025.findings-acl.856"
+    },
+    {
+      "source": "openalex",
+      "title": "A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models",
+      "external_id": "W4401857375",
+      "url": "https://doi.org/10.1145/3637528.3671470"
+    },
+    {
+      "source": "arxiv",
+      "title": "Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation",
+      "external_id": "2504.13684",
+      "url": "https://arxiv.org/abs/2504.13684v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Designing AI Systems that Augment Human Performed vs. Demonstrated Critical Thinking",
+      "external_id": "2504.14689",
+      "url": "https://arxiv.org/abs/2504.14689v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Factually: Exploring Wearable Fact-Checking for Augmented Truth Discernment",
+      "external_id": "2504.17204",
+      "url": "https://arxiv.org/abs/2504.17204v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augmented Generation",
+      "external_id": "2411.18583",
+      "url": "https://arxiv.org/abs/2411.18583v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Evaluation of Retrieval-Augmented Generation: A Survey",
+      "external_id": "W4406771321",
+      "url": "https://doi.org/10.1007/978-981-96-1024-2_8"
+    },
+    {
+      "source": "openalex",
+      "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "external_id": "W4389984066",
+      "url": "http://arxiv.org/abs/2312.10997"
+    },
+    {
+      "source": "openalex",
+      "title": "Deploying Large Language Models With Retrieval Augmented Generation",
+      "external_id": "W4404573342",
+      "url": "http://arxiv.org/abs/2411.11895"
+    },
+    {
+      "source": "openalex",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive Language Applications",
+      "external_id": "W7160907120",
+      "url": "https://doi.org/10.5281/zenodo.20135685"
+    },
+    {
+      "source": "openalex",
+      "title": "A Systematic Literature Review of Retrieval-Augmented Generation: Techniques, Metrics, and Challenges",
+      "external_id": "W7114889968",
+      "url": "https://doi.org/10.3390/bdcc9120320"
+    },
+    {
+      "source": "arxiv",
+      "title": "Towards Better Instruction Following Retrieval Models",
+      "external_id": "2505.21439",
+      "url": "https://arxiv.org/abs/2505.21439v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Lightweight and Direct Document Relevance Optimization for Generative Information Retrieval",
+      "external_id": "2504.05181",
+      "url": "https://arxiv.org/abs/2504.05181v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "Hydra: Unifying Document Retrieval and Generation in a Single Vision-Language Model",
+      "external_id": "2603.28554",
+      "url": "https://arxiv.org/abs/2603.28554v3"
+    },
+    {
+      "source": "arxiv",
+      "title": "Overcoming low-utility facets for complex answer retrieval",
+      "external_id": "1811.08772",
+      "url": "https://arxiv.org/abs/1811.08772v1"
+    },
+    {
+      "source": "openalex",
+      "title": "ReMoDiffuse: Retrieval-Augmented Motion Diffusion Model",
+      "external_id": "W4390872247",
+      "url": "https://doi.org/10.1109/iccv51070.2023.00040"
+    },
+    {
+      "source": "openalex",
+      "title": "Improving knowledge management in building engineering with hybrid retrieval-augmented generation framework",
+      "external_id": "W4407835627",
+      "url": "https://doi.org/10.1016/j.jobe.2025.112189"
+    },
+    {
+      "source": "openalex",
+      "title": "Integrating Knowledge Retrieval with Generation: A Comprehensive Survey of RAG Models in NLP",
+      "external_id": "W4409203786",
+      "url": "https://doi.org/10.20944/preprints202504.0351.v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Hybrid Retrieval for Retrieval Augmented Generation in the German Language Production Domain",
+      "external_id": "W4411255859",
+      "url": "https://doi.org/10.12720/jait.16.6.819-829"
+    },
+    {
+      "source": "arxiv",
+      "title": "RMIT-ADM+S at the MMU-RAG NeurIPS 2025 Competition",
+      "external_id": "2602.20735",
+      "url": "https://arxiv.org/abs/2602.20735v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "VQualA 2025 Challenge on Engagement Prediction for Short Videos: Methods and Results",
+      "external_id": "2509.02969",
+      "url": "https://arxiv.org/abs/2509.02969v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "NTIRE 2025 Challenge on Image Super-Resolution (x4): Methods and Results",
+      "external_id": "2504.14582",
+      "url": "https://arxiv.org/abs/2504.14582v3"
+    },
+    {
+      "source": "arxiv",
+      "title": "The 2025 Foundation Model Transparency Index",
+      "external_id": "2512.10169",
+      "url": "https://arxiv.org/abs/2512.10169v1"
+    },
+    {
+      "source": "openalex",
+      "title": "The Combination of RAG and RL: A Technological Breakthrough and Future Directions in Mathematical Reasoning with LLMs",
+      "external_id": "W7212436423",
+      "url": "https://doi.org/10.70267/aitia.20261925"
+    },
+    {
+      "source": "openalex",
+      "title": "Safe RAG by RAG: Untying the Bell That RAG Rang with the RAG Hand",
+      "external_id": "W7138372852",
+      "url": "https://doi.org/10.1609/aaai.v40i38.40462"
+    },
+    {
+      "source": "openalex",
+      "title": "RAG-Anything: All-in-One RAG Framework",
+      "external_id": "W4415270293",
+      "url": "http://arxiv.org/abs/2510.12323"
+    },
+    {
+      "source": "openalex",
+      "title": "Traditional RAG vs. Agentic RAG: A Comparative Study of Retrieval-Augmented Systems",
+      "external_id": "W4413638524",
+      "url": "https://doi.org/10.36227/techrxiv.175624551.12254549/v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Retrieval-Augmented Generation (RAG) in Healthcare: A Comprehensive Review",
+      "external_id": "W4414128336",
+      "url": "https://doi.org/10.3390/ai6090226"
+    },
+    {
+      "source": "arxiv",
+      "title": "Engineering the RAG Stack: A Comprehensive Review of the Architecture and Trust Frameworks for Retrieval-Augmented Generation Systems",
+      "external_id": "2601.05264",
+      "url": "https://arxiv.org/abs/2601.05264v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Sifei at SemEval-2026 Task 8: Hybrid Retrieval and Query Rewriting for Multi-Turn RAG",
+      "external_id": "2606.28352",
+      "url": "https://arxiv.org/abs/2606.28352v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "LongEval at CLEF 2025: Longitudinal Evaluation of IR Model Performance",
+      "external_id": "2503.08541",
+      "url": "https://arxiv.org/abs/2503.08541v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Retrieval-Augmented Generation: Chunking and Retrieval Strategy Trade-offs -A 2025-2026 Update to the Comprehensive Survey Landscape",
+      "external_id": "W7214217248",
+      "url": "https://doi.org/10.2139/ssrn.7504338"
+    },
+    {
+      "source": "openalex",
+      "title": "A survey on medical multimodal retrieval-augmented generation (RAG)",
+      "external_id": "W7165523062",
+      "url": "https://doi.org/10.1016/j.hcc.2026.100415"
+    },
+    {
+      "source": "openalex",
+      "title": "Decoupling retrieval quality from generative reasoning: A multi-dimensional benchmark of RAG architectures",
+      "external_id": "W7201831175",
+      "url": "https://doi.org/10.1051/epjconf/202638100028"
+    },
+    {
+      "source": "openalex",
+      "title": "OPTIMIZED DOMAIN-SPECIFIC KNOWLEDGE RETRIEVAL USING HYBRID RAG ARCHITECTURE",
+      "external_id": "W7216413676",
+      "url": "https://zesterapublications.com/journals/index.php/ijaecme/article/view/439"
+    },
+    {
+      "source": "openalex",
+      "title": "LARAG: Link-Aware Retrieval Strategy for RAG Systems in Hyperlinked Technical Documentation",
+      "external_id": "W7160836531",
+      "url": "https://arxiv.org/abs/2605.07517"
+    },
+    {
+      "source": "arxiv",
+      "title": "VQualA 2025 Challenge on Visual Quality Comparison for Large Multimodal Models: Methods and Results",
+      "external_id": "2509.09190",
+      "url": "https://arxiv.org/abs/2509.09190v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Overview of the Sensemaking Task at the ELOQUENT 2025 Lab: LLMs as Teachers, Students and Evaluators",
+      "external_id": "2507.12143",
+      "url": "https://arxiv.org/abs/2507.12143v1"
+    },
+    {
+      "source": "openalex",
+      "title": "Generating Diverse Q&A Benchmarks for RAG Evaluation with DataMorgana",
+      "external_id": "W4406779230",
+      "url": "http://arxiv.org/abs/2501.12789"
+    },
+    {
+      "source": "arxiv",
+      "title": "ICME 2025 Generalizable HDR and SDR Video Quality Measurement Grand Challenge",
+      "external_id": "2506.22790",
+      "url": "https://arxiv.org/abs/2506.22790v2"
+    },
+    {
+      "source": "arxiv",
+      "title": "The AudioMOS Challenge 2025",
+      "external_id": "2509.01336",
+      "url": "https://arxiv.org/abs/2509.01336v1"
+    },
+    {
+      "source": "openalex",
+      "title": "RAG-Based AI Agents for Enterprise Software Development: Implementation Patterns and Production Deployment",
+      "external_id": "W7118784573",
+      "url": "https://doi.org/10.71465/fair456"
+    },
+    {
+      "source": "openalex",
+      "title": "Retrieval-Augmented Generation (RAG): Advances and Challenges",
+      "external_id": "W4411922903",
+      "url": "https://doi.org/10.7546/pecr.83.25.03"
+    },
+    {
+      "source": "openalex",
+      "title": "Re:CAP - Auditing Retrieval Coverage in Production RAG Pipelines",
+      "external_id": "W7214056817",
+      "url": "https://arxiv.org/abs/2609.24122"
+    },
+    {
+      "source": "openalex",
+      "title": "Sustainable water information systems with LLMs and RAG: Opportunities and challenges",
+      "external_id": "W7130565461",
+      "url": "https://doi.org/10.1016/j.grets.2026.100359"
+    },
+    {
+      "source": "arxiv",
+      "title": "When the Chain of Thought Knows Better: Failure Modes in Multi-Turn Reasoning Models",
+      "external_id": "2606.10740",
+      "url": "https://arxiv.org/abs/2606.10740v2"
+    },
+    {
+      "source": "openalex",
+      "title": "A Failure-Mode Benchmark for Polymorphic Sybil Poisoning in RAG",
+      "external_id": "W7167608129",
+      "url": "https://arxiv.org/abs/2607.03739"
+    },
+    {
+      "source": "openalex",
+      "title": "RMIT-ADM+S at the MMU-RAG NeurIPS 2025 Competition",
+      "external_id": "W7131421727",
+      "url": "http://arxiv.org/abs/2602.20735"
+    },
+    {
+      "source": "openalex",
+      "title": "A Systematic Taxonomy of Failure Modes in Retrieval-Augmented Generation Systems",
+      "external_id": "W7166864997",
+      "url": "https://doi.org/10.18653/v1/2026.trustnlp-main.27"
+    },
+    {
+      "source": "arxiv",
+      "title": "Case Studies in Industry: What We Have Learnt",
+      "external_id": "1611.08834",
+      "url": "https://arxiv.org/abs/1611.08834v1"
+    },
+    {
+      "source": "arxiv",
+      "title": "Protocol and Tools for Conducting Agile Software Engineering Research in an Industrial-Academic Setting: A Preliminary Study",
+      "external_id": "1804.03416",
+      "url": "https://arxiv.org/abs/1804.03416v1"
+    },
+    {
+      "source": "openalex",
+      "title": "RAG or Fine-tuning? A Comparative Study on LCMs-based Code Completion in Industry",
+      "external_id": "W4412703944",
+      "url": "https://doi.org/10.1145/3696630.3728535"
+    },
+    {
+      "source": "openalex",
+      "title": "Replication Package - Applying RAG in Industry: Insights from Grey Literature and Practitioner Perspectives",
+      "external_id": "W7131155553",
+      "url": "https://doi.org/10.5281/zenodo.18668378"
+    },
+    {
+      "source": "openalex",
+      "title": "Replication Package - Applying RAG in Industry: Insights from Grey Literature and Practitioner Perspectives",
+      "external_id": "W7131073995",
+      "url": "https://doi.org/10.5281/zenodo.18668377"
+    },
+    {
+      "source": "openalex",
+      "title": "RAG or Fine-tuning? A Comparative Study on LCMs-based Code Completion in Industry",
+      "external_id": "W4415328566",
+      "url": "http://arxiv.org/abs/2505.15179"
+    },
+    {
+      "source": "openalex",
+      "title": "Design of a RAG-Based Customer Service Chatbot Enhanced with Knowledge Graph and GPT Evaluation: A Case Study in the Import Trade Industry",
+      "external_id": "W7148559209",
+      "url": "https://doi.org/10.3390/software5020015"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "70efe221-f806-4bbb-87fe-9946454bb506",
+      "document_id": "de29108d-f6f5-415f-ae6e-2918557e330a",
+      "chunk_id": "963c916f-722e-4640-b757-7c1f5b2619a3",
+      "source": "sample_research.pdf",
+      "title": "Hybrid Retrieval Notes",
+      "page": 1,
+      "section": "Hybrid Retrieval Notes",
+      "text": "Hybrid Retrieval Notes\n\nIntroduction\n\nThis document describes BM25, dense vectors, and reciprocal rank fusion.\n\nMethods\n\nChunks retain page numbers and section metadata for provenance.",
+      "retrieval_score": -9.635885238647461,
+      "retrieval_method": "hybrid_rerank",
+      "source_metadata": {
+        "filename": "sample_research.pdf",
+        "source_type": "pdf",
+        "knowledge_scope": "PUBLIC_RESEARCH",
+        "document_kind": "pdf",
+        "project_id": null,
+        "ingestion_timestamp": "2026-10-06T16:11:44.999421+00:00",
+        "processed_path": "/Users/karan_bhosle/Karanverse-personal AI Research Lab/data/processed/de29108d-f6f5-415f-ae6e-2918557e330a"
+      }
+    },
+    {
+      "evidence_id": "a6e953a7-e549-4fad-a6b3-15bf1f3cff0b",
+      "document_id": "de29108d-f6f5-415f-ae6e-2918557e330a",
+      "chunk_id": "963c916f-722e-4640-b757-7c1f5b2619a3",
+      "source": "sample_research.pdf",
+      "title": "Hybrid Retrieval Notes",
+      "page": 1,
+      "section": "Hybrid Retrieval Notes",
+      "text": "Hybrid Retrieval Notes\n\nIntroduction\n\nThis document describes BM25, dense vectors, and reciprocal rank fusion.\n\nMethods\n\nChunks retain page numbers and section metadata for provenance.",
+      "retrieval_score": -9.635885238647461,
+      "retrieval_method": "hybrid_rerank",
+      "source_metadata": {
+        "filename": "sample_research.pdf",
+        "source_type": "pdf",
+        "knowledge_scope": "PUBLIC_RESEARCH",
+        "document_kind": "pdf",
+        "project_id": null,
+        "ingestion_timestamp": "2026-10-06T16:11:44.999421+00:00",
+        "processed_path": "/Users/karan_bhosle/Karanverse-personal AI Research Lab/data/processed/de29108d-f6f5-415f-ae6e-2918557e330a"
+      }
+    }
+  ],
+  "report": {
+    "question": "what are the best approches in rag 2026?",
+    "executive_summary": "The research task sought to identify the best approaches in RAG (Retrieval-Augmented Generation) anticipated for 2026. However, the available local evidence is severely limited to two nearly identical chunks describing basic retrieval concepts (BM25, dense vectors, and reciprocal rank fusion). Without access to peer-reviewed RAG methodology papers, comprehensive benchmarks, production case studies, or critical analyses, it is impossible to meaningfully compare dominant architectures, evaluate performance frameworks, assess production scalability, or document limitations for 2026. The only substantive information comes from a sample document ('Hybrid Retrieval Notes') that introduces foundational retrieval techniques but lacks depth, methodological innovation, or comparative analysis required to answer the research question. Consequently, no definitive recommendations regarding 'best approaches' in RAG 2026 can be made from the provided evidence.",
+    "key_findings": [
+      {
+        "statement": "The only accessible local evidence describes foundational retrieval techniques including BM25, dense vector embeddings, and reciprocal rank fusion methods.",
+        "basis": "evidence",
+        "evidence_ids": [
+          "70efe221-f806-4bbb-87fe-9946454bb506",
+          "a6e953a7-e549-4fad-a6b3-15bf1f3cff0b"
+        ],
+        "citation_labels": [
+          "[1]",
+          "[2]"
+        ],
+        "confidence": "low",
+        "uncertainty": "high"
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "70efe221-f806-4bbb-87fe-9946454bb506",
+        "citation_label": "[1]",
+        "document_id": "de29108d-f6f5-415f-ae6e-2918557e330a",
+        "chunk_id": "963c916f-722e-4640-b757-7c1f5b2619a3",
+        "title": "Hybrid Retrieval Notes",
+        "excerpt": "Hybrid Retrieval Notes\n\nIntroduction\n\nThis document describes BM25, dense vectors, and reciprocal rank fusion.\n\nMethods\n\nChunks retain page numbers and section metadata for provenance.",
+        "page": 1,
+        "section": "Hybrid Retrieval Notes",
+        "retrieval_score": -9.635885238647461,
+        "source_filename": "sample_research.pdf"
+      },
+      {
+        "evidence_id": "a6e953a7-e549-4fad-a6b3-15bf1f3cff0b",
+        "citation_label": "[2]",
+        "document_id": "de29108d-f6f5-415f-ae6e-2918557e330a",
+        "chunk_id": "963c916f-722e-4640-b757-7c1f5b2619a3",
+        "title": "Hybrid Retrieval Notes",
+        "excerpt": "Hybrid Retrieval Notes\n\nIntroduction\n\nThis document describes BM25, dense vectors, and reciprocal rank fusion.\n\nMethods\n\nChunks retain page numbers and section metadata for provenance.",
+        "page": 1,
+        "section": "Hybrid Retrieval Notes",
+        "retrieval_score": -9.635885238647461,
+        "source_filename": "sample_research.pdf"
+      }
+    ],
+    "contradictions": [
+      {
+        "description": "The available evidence does not contain contradictory statements among itself, as both chunks are identical introductions to basic retrieval concepts.",
+        "evidence_ids": [
+          "70efe221-f806-4bbb-87fe-9946454bb506",
+          "a6e953a7-e549-4fad-a6b3-15bf1f3cff0b"
+        ],
+        "citation_labels": [
+          "[1]",
+          "[2]"
+        ],
+        "uncertainty": "none"
+      }
+    ],
+    "limitations": [
+      "The local evidence corpus consists of only two near-identical chunks from a single sample PDF, providing no substantive technical depth or methodological comparison.",
+      "No peer-reviewed RAG architecture papers, benchmark datasets, or evaluation frameworks are accessible despite the presence of arXiv and OpenAlex metadata references.",
+      "There is no coverage of production deployment challenges, scalability considerations, or real-world case studies for RAG systems in 2026.",
+      "Critical analyses of RAG failure modes, security risks, and poisoning/leakage issues are absent from the available evidence.",
+      "Domain-specific RAG applications (healthcare, legal, fintech, education) are not represented in the accessible corpus.",
+      "The critic assessment confirms that no evidence supports claims about the best RAG approaches for 2026, citing the sample document as the sole source and noting its lack of scholarly rigor.",
+      "The only accessible source is 'sample_research.pdf', a sample document rather than peer-reviewed literature.",
+      "Source metadata indicates knowledge_scope PUBLIC_RESEARCH with no author, venue, or citation information.",
+      "The two local chunks are duplicates of the same content, providing no independent corroboration.",
+      "External papers listed in the fact pack (arxiv and openalex entries) are not included in allowed_evidence_ids, so their content cannot be critiqued or referenced.",
+      "No evidence in the accessible bundle supports claims about which RAG approaches are best or most influential by 2026.",
+      "No evidence supports specific evaluation frameworks, metrics, or benchmark results for RAG systems.",
+      "No evidence addresses production deployment factors, scalability, or cost considerations.",
+      "No evidence documents failure modes, limitations, or challenges in state-of-the-art RAG research.",
+      "No evidence covers domain-specific RAG applications (healthcare, legal, fintech, education, etc.).",
+      "Research gap: The local corpus needs substantially more chunks covering the four sub-questions.",
+      "Research gap: External paper metadata exists but full text is not accessible through allowed evidence IDs.",
+      "Research gap: No benchmark datasets or standardized evaluation results are available in the accessible corpus.",
+      "Research gap: No critical analyses of failure modes are present in the accessible corpus.",
+      "Research gap: No peer-reviewed survey or meta-analysis content is accessible.",
+      "Evidence sufficiency: The accessible local corpus contains only two identical chunks (evidence IDs 70efe221-f806-4bbb-87fe-9946454bb506 and a6e953a7-e549-4fad-a6b3-15bf1f3cff0b) from a single sample PDF titled 'Hybrid Retrieval Notes'. These excerpts merely introduce BM25, dense vectors, and reciprocal rank fusion with no substantive detail. This is insufficient to address any of the four sub-questions about dominant RAG architectures, evaluation frameworks, production deployment factors, or limitations for 2026."
+    ],
+    "practical_recommendations": [
+      {
+        "recommendation": "Conduct a targeted literature review focusing exclusively on recent (2024-2026) peer-reviewed RAG surveys, benchmarks, and industry case studies to identify dominant architectures and evaluation criteria.",
+        "basis": "inference",
+        "evidence_ids": [],
+        "citation_labels": [],
+        "confidence": "medium"
+      },
+      {
+        "recommendation": "Prioritize gathering access to full-text RAG methodology papers (e.g., AR-RAG, EVOR, GRAG, CRAG) and benchmark reports (e.g., CRAG, OmniEval, GaRAGe) to enable comparative analysis of approaches.",
+        "basis": "inference",
+        "evidence_ids": [],
+        "citation_labels": [],
+        "confidence": "medium"
+      },
+      {
+        "recommendation": "Focus on identifying open research gaps such as efficient large-scale RAG inference, graph-based retrieval strategies, and production scalability challenges to guide future work.",
+        "basis": "inference",
+        "evidence_ids": [],
+        "citation_labels": [],
+        "confidence": "medium"
+      }
+    ],
+    "open_questions": [
+      "Which RAG architectures (dense retrieval, hybrid retrieval, agentic RAG, graph-based) are considered most effective in 2026?",
+      "How do current evaluation frameworks assess RAG system robustness and accuracy?",
+      "What are the critical factors for successful production deployment of RAG systems?",
+      "What limitations and failure modes are most prevalent in state-of-the-art RAG research?",
+      "Are there significant differences in performance between RAG variants across domains (legal, healthcare, finance)?",
+      "What are the emerging trends in RAG efficiency and scalability for enterprise adoption?",
+      "Comparative analysis of traditional RAG versus agentic RAG architectures.",
+      "Graph-based and hybrid retrieval strategy trade-offs.",
+      "Efficient RAG inference and caching approaches.",
+      "Security, safety, and poisoning/leakage concerns in RAG.",
+      "Industry case studies and practitioner perspectives on production RAG.",
+      "Longitudinal or multi-turn RAG evaluation approaches.",
+      "Retrieve full text of external papers on graph RAG, agentic RAG, and hybrid retrieval strategies.",
+      "Search for RAG evaluation benchmark papers and standardized metrics.",
+      "Find case studies on RAG production deployment and scalability.",
+      "Locate critical analyses of RAG failure modes, poisoning, and leakage.",
+      "Identify surveys and meta-analyses of RAG techniques published 2024-2026."
+    ],
+    "references": [
+      {
+        "reference_id": "evidence:70efe221-f806-4bbb-87fe-9946454bb506",
+        "reference_type": "local_evidence",
+        "title": "Hybrid Retrieval Notes",
+        "citation_label": "[1]",
+        "evidence_id": "70efe221-f806-4bbb-87fe-9946454bb506",
+        "external_source": null,
+        "external_id": null,
+        "url": null
+      },
+      {
+        "reference_id": "evidence:a6e953a7-e549-4fad-a6b3-15bf1f3cff0b",
+        "reference_type": "local_evidence",
+        "title": "Hybrid Retrieval Notes",
+        "citation_label": "[2]",
+        "evidence_id": "a6e953a7-e549-4fad-a6b3-15bf1f3cff0b",
+        "external_source": null,
+        "external_id": null,
+        "url": null
+      },
+      {
+        "reference_id": "arxiv:2506.06962",
+        "reference_type": "external_literature",
+        "title": "AR-RAG: Autoregressive Retrieval Augmentation for Image Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2506.06962",
+        "url": "https://arxiv.org/abs/2506.06962v3"
+      },
+      {
+        "reference_id": "arxiv:2402.12317",
+        "reference_type": "external_literature",
+        "title": "EVOR: Evolving Retrieval for Code Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2402.12317",
+        "url": "https://arxiv.org/abs/2402.12317v2"
+      },
+      {
+        "reference_id": "arxiv:2509.23793",
+        "reference_type": "external_literature",
+        "title": "Transformer Tafsir at QIAS 2025 Shared Task: Hybrid Retrieval-Augmented Generation for Islamic Knowledge Question Answering",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2509.23793",
+        "url": "https://arxiv.org/abs/2509.23793v1"
+      },
+      {
+        "reference_id": "arxiv:2506.14634",
+        "reference_type": "external_literature",
+        "title": "AIn't Nothing But a Survey? Using Large Language Models for Coding German Open-Ended Survey Responses on Survey Motivation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2506.14634",
+        "url": "https://arxiv.org/abs/2506.14634v3"
+      },
+      {
+        "reference_id": "arxiv:2502.00306",
+        "reference_type": "external_literature",
+        "title": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2502.00306",
+        "url": "https://arxiv.org/abs/2502.00306v2"
+      },
+      {
+        "reference_id": "openalex:W4409348640",
+        "reference_type": "external_literature",
+        "title": "Retrieval-Augmented Generation (RAG) Chatbots for Education: A Survey of Applications",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4409348640",
+        "url": "https://doi.org/10.3390/app15084234"
+      },
+      {
+        "reference_id": "openalex:W4402854593",
+        "reference_type": "external_literature",
+        "title": "Retrieval-augmented generation for natural language processing: a survey",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4402854593",
+        "url": "https://doi.org/10.1007/s10462-026-11605-7"
+      },
+      {
+        "reference_id": "openalex:W4411120544",
+        "reference_type": "external_literature",
+        "title": "GRAG: Graph Retrieval-Augmented Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4411120544",
+        "url": "https://doi.org/10.18653/v1/2025.findings-naacl.232"
+      },
+      {
+        "reference_id": "openalex:W4412377217",
+        "reference_type": "external_literature",
+        "title": "Parametric Retrieval Augmented Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4412377217",
+        "url": "https://doi.org/10.1145/3726302.3729957"
+      },
+      {
+        "reference_id": "openalex:W4411119292",
+        "reference_type": "external_literature",
+        "title": "Knowledge Graph-Guided Retrieval Augmented Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4411119292",
+        "url": "https://doi.org/10.18653/v1/2025.naacl-long.449"
+      },
+      {
+        "reference_id": "arxiv:2511.22858",
+        "reference_type": "external_literature",
+        "title": "RAG System for Supporting Japanese Litigation Procedures: Faithful Response Generation Complying with Legal Norms",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2511.22858",
+        "url": "https://arxiv.org/abs/2511.22858v1"
+      },
+      {
+        "reference_id": "arxiv:2401.15391",
+        "reference_type": "external_literature",
+        "title": "MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop Queries",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2401.15391",
+        "url": "https://arxiv.org/abs/2401.15391v1"
+      },
+      {
+        "reference_id": "arxiv:2504.01346",
+        "reference_type": "external_literature",
+        "title": "RAG over Tables: Hierarchical Memory Index, Multi-Stage Retrieval, and Benchmarking",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2504.01346",
+        "url": "https://arxiv.org/abs/2504.01346v4"
+      },
+      {
+        "reference_id": "arxiv:2406.04744",
+        "reference_type": "external_literature",
+        "title": "CRAG -- Comprehensive RAG Benchmark",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2406.04744",
+        "url": "https://arxiv.org/abs/2406.04744v2"
+      },
+      {
+        "reference_id": "arxiv:2510.25518",
+        "reference_type": "external_literature",
+        "title": "Retrieval Augmented Generation (RAG) for Fintech: Agentic Design and Evaluation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2510.25518",
+        "url": "https://arxiv.org/abs/2510.25518v1"
+      },
+      {
+        "reference_id": "openalex:W7133297525",
+        "reference_type": "external_literature",
+        "title": "Legal RAG Bench: an end-to-end benchmark for legal RAG",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7133297525",
+        "url": "http://arxiv.org/abs/2603.01710"
+      },
+      {
+        "reference_id": "openalex:W4416037024",
+        "reference_type": "external_literature",
+        "title": "OmniEval: An Omnidirectional and Automatic RAG Evaluation Benchmark in Financial Domain",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4416037024",
+        "url": "https://doi.org/10.18653/v1/2025.emnlp-main.292"
+      },
+      {
+        "reference_id": "openalex:W4412886939",
+        "reference_type": "external_literature",
+        "title": "Generating Q&A Benchmarks for RAG Evaluation in Enterprise Settings",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4412886939",
+        "url": "https://doi.org/10.18653/v1/2025.acl-industry.33"
+      },
+      {
+        "reference_id": "openalex:W7160923717",
+        "reference_type": "external_literature",
+        "title": "Generating Leakage-Free Benchmarks for Robust RAG Evaluation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7160923717",
+        "url": "https://arxiv.org/abs/2605.08838"
+      },
+      {
+        "reference_id": "openalex:W4412888015",
+        "reference_type": "external_literature",
+        "title": "GaRAGe: A Benchmark with Grounding Annotations for RAG Evaluation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4412888015",
+        "url": "https://doi.org/10.18653/v1/2025.findings-acl.875"
+      },
+      {
+        "reference_id": "arxiv:1906.01101",
+        "reference_type": "external_literature",
+        "title": "MEMe: An Accurate Maximum Entropy Method for Efficient Approximations in Large-Scale Machine Learning",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "1906.01101",
+        "url": "https://arxiv.org/abs/1906.01101v1"
+      },
+      {
+        "reference_id": "arxiv:2412.12881",
+        "reference_type": "external_literature",
+        "title": "RAG-Star: Enhancing Deliberative Reasoning with Retrieval Augmented Verification and Refinement",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2412.12881",
+        "url": "https://arxiv.org/abs/2412.12881v1"
+      },
+      {
+        "reference_id": "openalex:W7154014898",
+        "reference_type": "external_literature",
+        "title": "QCFuse: Query-Centric Cache Fusion for Efficient RAG Inference",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7154014898",
+        "url": "https://arxiv.org/abs/2604.08585"
+      },
+      {
+        "reference_id": "openalex:W4413300618",
+        "reference_type": "external_literature",
+        "title": "Learning to Retrieve, Generate, and Compress: A Unified View of Efficient RAG",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4413300618",
+        "url": "https://doi.org/10.20944/preprints202508.1211.v1"
+      },
+      {
+        "reference_id": "openalex:W7165394570",
+        "reference_type": "external_literature",
+        "title": "CacheWeaver: Cache-Aware Evidence Ordering for Efficient Grounded RAG Inference",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7165394570",
+        "url": "https://arxiv.org/abs/2606.19667"
+      },
+      {
+        "reference_id": "openalex:W4412888160",
+        "reference_type": "external_literature",
+        "title": "GNN-RAG: Graph Neural Retrieval for Efficient Large Language Model Reasoning on Knowledge Graphs",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4412888160",
+        "url": "https://doi.org/10.18653/v1/2025.findings-acl.856"
+      },
+      {
+        "reference_id": "openalex:W4401857375",
+        "reference_type": "external_literature",
+        "title": "A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4401857375",
+        "url": "https://doi.org/10.1145/3637528.3671470"
+      },
+      {
+        "reference_id": "arxiv:2504.13684",
+        "reference_type": "external_literature",
+        "title": "Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2504.13684",
+        "url": "https://arxiv.org/abs/2504.13684v1"
+      },
+      {
+        "reference_id": "arxiv:2504.14689",
+        "reference_type": "external_literature",
+        "title": "Designing AI Systems that Augment Human Performed vs. Demonstrated Critical Thinking",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2504.14689",
+        "url": "https://arxiv.org/abs/2504.14689v1"
+      },
+      {
+        "reference_id": "arxiv:2504.17204",
+        "reference_type": "external_literature",
+        "title": "Factually: Exploring Wearable Fact-Checking for Augmented Truth Discernment",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2504.17204",
+        "url": "https://arxiv.org/abs/2504.17204v1"
+      },
+      {
+        "reference_id": "arxiv:2411.18583",
+        "reference_type": "external_literature",
+        "title": "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augmented Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2411.18583",
+        "url": "https://arxiv.org/abs/2411.18583v1"
+      },
+      {
+        "reference_id": "openalex:W4406771321",
+        "reference_type": "external_literature",
+        "title": "Evaluation of Retrieval-Augmented Generation: A Survey",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4406771321",
+        "url": "https://doi.org/10.1007/978-981-96-1024-2_8"
+      },
+      {
+        "reference_id": "openalex:W4389984066",
+        "reference_type": "external_literature",
+        "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4389984066",
+        "url": "http://arxiv.org/abs/2312.10997"
+      },
+      {
+        "reference_id": "openalex:W4404573342",
+        "reference_type": "external_literature",
+        "title": "Deploying Large Language Models With Retrieval Augmented Generation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4404573342",
+        "url": "http://arxiv.org/abs/2411.11895"
+      },
+      {
+        "reference_id": "openalex:W7160907120",
+        "reference_type": "external_literature",
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive Language Applications",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7160907120",
+        "url": "https://doi.org/10.5281/zenodo.20135685"
+      },
+      {
+        "reference_id": "openalex:W7114889968",
+        "reference_type": "external_literature",
+        "title": "A Systematic Literature Review of Retrieval-Augmented Generation: Techniques, Metrics, and Challenges",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7114889968",
+        "url": "https://doi.org/10.3390/bdcc9120320"
+      },
+      {
+        "reference_id": "arxiv:2505.21439",
+        "reference_type": "external_literature",
+        "title": "Towards Better Instruction Following Retrieval Models",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2505.21439",
+        "url": "https://arxiv.org/abs/2505.21439v1"
+      },
+      {
+        "reference_id": "arxiv:2504.05181",
+        "reference_type": "external_literature",
+        "title": "Lightweight and Direct Document Relevance Optimization for Generative Information Retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2504.05181",
+        "url": "https://arxiv.org/abs/2504.05181v2"
+      },
+      {
+        "reference_id": "arxiv:2603.28554",
+        "reference_type": "external_literature",
+        "title": "Hydra: Unifying Document Retrieval and Generation in a Single Vision-Language Model",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2603.28554",
+        "url": "https://arxiv.org/abs/2603.28554v3"
+      },
+      {
+        "reference_id": "arxiv:1811.08772",
+        "reference_type": "external_literature",
+        "title": "Overcoming low-utility facets for complex answer retrieval",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "1811.08772",
+        "url": "https://arxiv.org/abs/1811.08772v1"
+      },
+      {
+        "reference_id": "openalex:W4390872247",
+        "reference_type": "external_literature",
+        "title": "ReMoDiffuse: Retrieval-Augmented Motion Diffusion Model",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4390872247",
+        "url": "https://doi.org/10.1109/iccv51070.2023.00040"
+      },
+      {
+        "reference_id": "openalex:W4407835627",
+        "reference_type": "external_literature",
+        "title": "Improving knowledge management in building engineering with hybrid retrieval-augmented generation framework",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4407835627",
+        "url": "https://doi.org/10.1016/j.jobe.2025.112189"
+      },
+      {
+        "reference_id": "openalex:W4409203786",
+        "reference_type": "external_literature",
+        "title": "Integrating Knowledge Retrieval with Generation: A Comprehensive Survey of RAG Models in NLP",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4409203786",
+        "url": "https://doi.org/10.20944/preprints202504.0351.v1"
+      },
+      {
+        "reference_id": "openalex:W4411255859",
+        "reference_type": "external_literature",
+        "title": "Hybrid Retrieval for Retrieval Augmented Generation in the German Language Production Domain",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4411255859",
+        "url": "https://doi.org/10.12720/jait.16.6.819-829"
+      },
+      {
+        "reference_id": "arxiv:2602.20735",
+        "reference_type": "external_literature",
+        "title": "RMIT-ADM+S at the MMU-RAG NeurIPS 2025 Competition",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2602.20735",
+        "url": "https://arxiv.org/abs/2602.20735v1"
+      },
+      {
+        "reference_id": "arxiv:2509.02969",
+        "reference_type": "external_literature",
+        "title": "VQualA 2025 Challenge on Engagement Prediction for Short Videos: Methods and Results",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2509.02969",
+        "url": "https://arxiv.org/abs/2509.02969v1"
+      },
+      {
+        "reference_id": "arxiv:2504.14582",
+        "reference_type": "external_literature",
+        "title": "NTIRE 2025 Challenge on Image Super-Resolution (x4): Methods and Results",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2504.14582",
+        "url": "https://arxiv.org/abs/2504.14582v3"
+      },
+      {
+        "reference_id": "arxiv:2512.10169",
+        "reference_type": "external_literature",
+        "title": "The 2025 Foundation Model Transparency Index",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2512.10169",
+        "url": "https://arxiv.org/abs/2512.10169v1"
+      },
+      {
+        "reference_id": "openalex:W7212436423",
+        "reference_type": "external_literature",
+        "title": "The Combination of RAG and RL: A Technological Breakthrough and Future Directions in Mathematical Reasoning with LLMs",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7212436423",
+        "url": "https://doi.org/10.70267/aitia.20261925"
+      },
+      {
+        "reference_id": "openalex:W7138372852",
+        "reference_type": "external_literature",
+        "title": "Safe RAG by RAG: Untying the Bell That RAG Rang with the RAG Hand",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7138372852",
+        "url": "https://doi.org/10.1609/aaai.v40i38.40462"
+      },
+      {
+        "reference_id": "openalex:W4415270293",
+        "reference_type": "external_literature",
+        "title": "RAG-Anything: All-in-One RAG Framework",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4415270293",
+        "url": "http://arxiv.org/abs/2510.12323"
+      },
+      {
+        "reference_id": "openalex:W4413638524",
+        "reference_type": "external_literature",
+        "title": "Traditional RAG vs. Agentic RAG: A Comparative Study of Retrieval-Augmented Systems",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4413638524",
+        "url": "https://doi.org/10.36227/techrxiv.175624551.12254549/v1"
+      },
+      {
+        "reference_id": "openalex:W4414128336",
+        "reference_type": "external_literature",
+        "title": "Retrieval-Augmented Generation (RAG) in Healthcare: A Comprehensive Review",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4414128336",
+        "url": "https://doi.org/10.3390/ai6090226"
+      },
+      {
+        "reference_id": "arxiv:2601.05264",
+        "reference_type": "external_literature",
+        "title": "Engineering the RAG Stack: A Comprehensive Review of the Architecture and Trust Frameworks for Retrieval-Augmented Generation Systems",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2601.05264",
+        "url": "https://arxiv.org/abs/2601.05264v1"
+      },
+      {
+        "reference_id": "arxiv:2606.28352",
+        "reference_type": "external_literature",
+        "title": "Sifei at SemEval-2026 Task 8: Hybrid Retrieval and Query Rewriting for Multi-Turn RAG",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2606.28352",
+        "url": "https://arxiv.org/abs/2606.28352v1"
+      },
+      {
+        "reference_id": "arxiv:2503.08541",
+        "reference_type": "external_literature",
+        "title": "LongEval at CLEF 2025: Longitudinal Evaluation of IR Model Performance",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2503.08541",
+        "url": "https://arxiv.org/abs/2503.08541v1"
+      },
+      {
+        "reference_id": "openalex:W7214217248",
+        "reference_type": "external_literature",
+        "title": "Retrieval-Augmented Generation: Chunking and Retrieval Strategy Trade-offs -A 2025-2026 Update to the Comprehensive Survey Landscape",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7214217248",
+        "url": "https://doi.org/10.2139/ssrn.7504338"
+      },
+      {
+        "reference_id": "openalex:W7165523062",
+        "reference_type": "external_literature",
+        "title": "A survey on medical multimodal retrieval-augmented generation (RAG)",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7165523062",
+        "url": "https://doi.org/10.1016/j.hcc.2026.100415"
+      },
+      {
+        "reference_id": "openalex:W7201831175",
+        "reference_type": "external_literature",
+        "title": "Decoupling retrieval quality from generative reasoning: A multi-dimensional benchmark of RAG architectures",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7201831175",
+        "url": "https://doi.org/10.1051/epjconf/202638100028"
+      },
+      {
+        "reference_id": "openalex:W7216413676",
+        "reference_type": "external_literature",
+        "title": "OPTIMIZED DOMAIN-SPECIFIC KNOWLEDGE RETRIEVAL USING HYBRID RAG ARCHITECTURE",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7216413676",
+        "url": "https://zesterapublications.com/journals/index.php/ijaecme/article/view/439"
+      },
+      {
+        "reference_id": "openalex:W7160836531",
+        "reference_type": "external_literature",
+        "title": "LARAG: Link-Aware Retrieval Strategy for RAG Systems in Hyperlinked Technical Documentation",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7160836531",
+        "url": "https://arxiv.org/abs/2605.07517"
+      },
+      {
+        "reference_id": "arxiv:2509.09190",
+        "reference_type": "external_literature",
+        "title": "VQualA 2025 Challenge on Visual Quality Comparison for Large Multimodal Models: Methods and Results",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2509.09190",
+        "url": "https://arxiv.org/abs/2509.09190v1"
+      },
+      {
+        "reference_id": "arxiv:2507.12143",
+        "reference_type": "external_literature",
+        "title": "Overview of the Sensemaking Task at the ELOQUENT 2025 Lab: LLMs as Teachers, Students and Evaluators",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2507.12143",
+        "url": "https://arxiv.org/abs/2507.12143v1"
+      },
+      {
+        "reference_id": "openalex:W4406779230",
+        "reference_type": "external_literature",
+        "title": "Generating Diverse Q&A Benchmarks for RAG Evaluation with DataMorgana",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4406779230",
+        "url": "http://arxiv.org/abs/2501.12789"
+      },
+      {
+        "reference_id": "arxiv:2506.22790",
+        "reference_type": "external_literature",
+        "title": "ICME 2025 Generalizable HDR and SDR Video Quality Measurement Grand Challenge",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2506.22790",
+        "url": "https://arxiv.org/abs/2506.22790v2"
+      },
+      {
+        "reference_id": "arxiv:2509.01336",
+        "reference_type": "external_literature",
+        "title": "The AudioMOS Challenge 2025",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2509.01336",
+        "url": "https://arxiv.org/abs/2509.01336v1"
+      },
+      {
+        "reference_id": "openalex:W7118784573",
+        "reference_type": "external_literature",
+        "title": "RAG-Based AI Agents for Enterprise Software Development: Implementation Patterns and Production Deployment",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7118784573",
+        "url": "https://doi.org/10.71465/fair456"
+      },
+      {
+        "reference_id": "openalex:W4411922903",
+        "reference_type": "external_literature",
+        "title": "Retrieval-Augmented Generation (RAG): Advances and Challenges",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4411922903",
+        "url": "https://doi.org/10.7546/pecr.83.25.03"
+      },
+      {
+        "reference_id": "openalex:W7214056817",
+        "reference_type": "external_literature",
+        "title": "Re:CAP - Auditing Retrieval Coverage in Production RAG Pipelines",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7214056817",
+        "url": "https://arxiv.org/abs/2609.24122"
+      },
+      {
+        "reference_id": "openalex:W7130565461",
+        "reference_type": "external_literature",
+        "title": "Sustainable water information systems with LLMs and RAG: Opportunities and challenges",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7130565461",
+        "url": "https://doi.org/10.1016/j.grets.2026.100359"
+      },
+      {
+        "reference_id": "arxiv:2606.10740",
+        "reference_type": "external_literature",
+        "title": "When the Chain of Thought Knows Better: Failure Modes in Multi-Turn Reasoning Models",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "2606.10740",
+        "url": "https://arxiv.org/abs/2606.10740v2"
+      },
+      {
+        "reference_id": "openalex:W7167608129",
+        "reference_type": "external_literature",
+        "title": "A Failure-Mode Benchmark for Polymorphic Sybil Poisoning in RAG",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7167608129",
+        "url": "https://arxiv.org/abs/2607.03739"
+      },
+      {
+        "reference_id": "openalex:W7131421727",
+        "reference_type": "external_literature",
+        "title": "RMIT-ADM+S at the MMU-RAG NeurIPS 2025 Competition",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7131421727",
+        "url": "http://arxiv.org/abs/2602.20735"
+      },
+      {
+        "reference_id": "openalex:W7166864997",
+        "reference_type": "external_literature",
+        "title": "A Systematic Taxonomy of Failure Modes in Retrieval-Augmented Generation Systems",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7166864997",
+        "url": "https://doi.org/10.18653/v1/2026.trustnlp-main.27"
+      },
+      {
+        "reference_id": "arxiv:1611.08834",
+        "reference_type": "external_literature",
+        "title": "Case Studies in Industry: What We Have Learnt",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "1611.08834",
+        "url": "https://arxiv.org/abs/1611.08834v1"
+      },
+      {
+        "reference_id": "arxiv:1804.03416",
+        "reference_type": "external_literature",
+        "title": "Protocol and Tools for Conducting Agile Software Engineering Research in an Industrial-Academic Setting: A Preliminary Study",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "arxiv",
+        "external_id": "1804.03416",
+        "url": "https://arxiv.org/abs/1804.03416v1"
+      },
+      {
+        "reference_id": "openalex:W4412703944",
+        "reference_type": "external_literature",
+        "title": "RAG or Fine-tuning? A Comparative Study on LCMs-based Code Completion in Industry",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4412703944",
+        "url": "https://doi.org/10.1145/3696630.3728535"
+      },
+      {
+        "reference_id": "openalex:W7131155553",
+        "reference_type": "external_literature",
+        "title": "Replication Package - Applying RAG in Industry: Insights from Grey Literature and Practitioner Perspectives",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7131155553",
+        "url": "https://doi.org/10.5281/zenodo.18668378"
+      },
+      {
+        "reference_id": "openalex:W7131073995",
+        "reference_type": "external_literature",
+        "title": "Replication Package - Applying RAG in Industry: Insights from Grey Literature and Practitioner Perspectives",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7131073995",
+        "url": "https://doi.org/10.5281/zenodo.18668377"
+      },
+      {
+        "reference_id": "openalex:W4415328566",
+        "reference_type": "external_literature",
+        "title": "RAG or Fine-tuning? A Comparative Study on LCMs-based Code Completion in Industry",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W4415328566",
+        "url": "http://arxiv.org/abs/2505.15179"
+      },
+      {
+        "reference_id": "openalex:W7148559209",
+        "reference_type": "external_literature",
+        "title": "Design of a RAG-Based Customer Service Chatbot Enhanced with Knowledge Graph and GPT Evaluation: A Case Study in the Import Trade Industry",
+        "citation_label": null,
+        "evidence_id": null,
+        "external_source": "openalex",
+        "external_id": "W7148559209",
+        "url": "https://doi.org/10.3390/software5020015"
+      }
+    ],
+    "uncertainty_notes": [
+      "High uncertainty exists due to the absence of substantive evidence beyond basic retrieval concept introductions.",
+      "The only available local evidence is a short introductory passage lacking methodological depth, experimental validation, or comparative analysis.",
+      "Without access to peer-reviewed literature, it is impossible to verify claims about 'best approaches' or to establish a reliable ranking of RAG methodologies for 2026.",
+      "The critic assessment explicitly states that no evidence supports specific claims about RAG approaches for 2026, confirming the insufficiency of the current evidence base.",
+      "Overall evidence coverage is limited; conclusions should be treated cautiously."
+    ]
+  },
+  "citations": [
+    {
+      "citation_number": 1,
+      "label": "[1]",
+      "evidence_id": "70efe221-f806-4bbb-87fe-9946454bb506",
+      "claim_text": null
+    }
+  ],
+  "conclusions": [
+    "The only accessible local evidence describes foundational retrieval techniques including BM25, dense vector embeddings, and reciprocal rank fusion methods."
+  ],
+  "unresolved_questions": [
+    "Which RAG architectures (dense retrieval, hybrid retrieval, agentic RAG, graph-based) are considered most effective in 2026?",
+    "How do current evaluation frameworks assess RAG system robustness and accuracy?",
+    "What are the critical factors for successful production deployment of RAG systems?",
+    "What limitations and failure modes are most prevalent in state-of-the-art RAG research?",
+    "Are there significant differences in performance between RAG variants across domains (legal, healthcare, finance)?",
+    "What are the emerging trends in RAG efficiency and scalability for enterprise adoption?",
+    "Comparative analysis of traditional RAG versus agentic RAG architectures.",
+    "Graph-based and hybrid retrieval strategy trade-offs.",
+    "Efficient RAG inference and caching approaches.",
+    "Security, safety, and poisoning/leakage concerns in RAG.",
+    "Industry case studies and practitioner perspectives on production RAG.",
+    "Longitudinal or multi-turn RAG evaluation approaches.",
+    "Retrieve full text of external papers on graph RAG, agentic RAG, and hybrid retrieval strategies.",
+    "Search for RAG evaluation benchmark papers and standardized metrics.",
+    "Find case studies on RAG production deployment and scalability.",
+    "Locate critical analyses of RAG failure modes, poisoning, and leakage.",
+    "Identify surveys and meta-analyses of RAG techniques published 2024-2026."
+  ],
+  "critique": {
+    "question": "what are the best approches in rag 2026?",
+    "evidence_sufficient": false,
+    "source_quality": [
+      "The only accessible source is 'sample_research.pdf', a sample document rather than peer-reviewed literature.",
+      "Source metadata indicates knowledge_scope PUBLIC_RESEARCH with no author, venue, or citation information.",
+      "The two local chunks are duplicates of the same content, providing no independent corroboration.",
+      "External papers listed in the fact pack (arxiv and openalex entries) are not included in allowed_evidence_ids, so their content cannot be critiqued or referenced."
+    ],
+    "conflicting_evidence": [],
+    "unsupported_claims": [
+      "No evidence in the accessible bundle supports claims about which RAG approaches are best or most influential by 2026.",
+      "No evidence supports specific evaluation frameworks, metrics, or benchmark results for RAG systems.",
+      "No evidence addresses production deployment factors, scalability, or cost considerations.",
+      "No evidence documents failure modes, limitations, or challenges in state-of-the-art RAG research.",
+      "No evidence covers domain-specific RAG applications (healthcare, legal, fintech, education, etc.)."
+    ],
+    "missing_perspectives": [
+      "Comparative analysis of traditional RAG versus agentic RAG architectures.",
+      "Graph-based and hybrid retrieval strategy trade-offs.",
+      "Efficient RAG inference and caching approaches.",
+      "Security, safety, and poisoning/leakage concerns in RAG.",
+      "Industry case studies and practitioner perspectives on production RAG.",
+      "Longitudinal or multi-turn RAG evaluation approaches."
+    ],
+    "duplicate_evidence": [
+      {
+        "evidence_ids": [
+          "70efe221-f806-4bbb-87fe-9946454bb506",
+          "a6e953a7-e549-4fad-a6b3-15bf1f3cff0b"
+        ],
+        "reason": "High textual overlap between excerpts"
+      }
+    ],
+    "research_gaps": [
+      "The local corpus needs substantially more chunks covering the four sub-questions.",
+      "External paper metadata exists but full text is not accessible through allowed evidence IDs.",
+      "No benchmark datasets or standardized evaluation results are available in the accessible corpus.",
+      "No critical analyses of failure modes are present in the accessible corpus.",
+      "No peer-reviewed survey or meta-analysis content is accessible."
+    ],
+    "additional_research_required": [
+      "Add external paper full texts to the evidence bundle and include their evidence IDs in allowed_evidence_ids.",
+      "Retrieve additional local corpus chunks covering RAG architectures, evaluation, deployment, and limitations.",
+      "Obtain benchmark dataset documentation and standardized evaluation results.",
+      "Collect industry case studies and practitioner perspectives on production RAG deployment.",
+      "Gather critical analyses of RAG failure modes and limitations."
+    ],
+    "additional_research_queries": [
+      "Retrieve full text of external papers on graph RAG, agentic RAG, and hybrid retrieval strategies.",
+      "Search for RAG evaluation benchmark papers and standardized metrics.",
+      "Find case studies on RAG production deployment and scalability.",
+      "Locate critical analyses of RAG failure modes, poisoning, and leakage.",
+      "Identify surveys and meta-analyses of RAG techniques published 2024-2026."
+    ],
+    "sufficiency_rationale": "The accessible local corpus contains only two identical chunks (evidence IDs 70efe221-f806-4bbb-87fe-9946454bb506 and a6e953a7-e549-4fad-a6b3-15bf1f3cff0b) from a single sample PDF titled 'Hybrid Retrieval Notes'. These excerpts merely introduce BM25, dense vectors, and reciprocal rank fusion with no substantive detail. This is insufficient to address any of the four sub-questions about dominant RAG architectures, evaluation frameworks, production deployment factors, or limitations for 2026.",
+    "deterministic_flags": [
+      "duplicate_evidence_detected",
+      "low_retrieval_scores"
+    ]
+  }
+}

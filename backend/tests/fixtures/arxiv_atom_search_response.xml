@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:arxiv="http://arxiv.org/schemas/atom">
+  <title>ArXiv Query: search_query=all:hybrid+retrieval</title>
+  <entry>
+    <id>http://arxiv.org/abs/2401.12345v1</id>
+    <updated>2024-01-15T18:30:00Z</updated>
+    <published>2024-01-10T12:00:00Z</published>
+    <title>Hybrid Retrieval with Reciprocal Rank Fusion</title>
+    <summary>We study combining BM25 and dense retrieval using reciprocal rank fusion.</summary>
+    <author>
+      <name>Grace Hopper</name>
+    </author>
+    <author>
+      <name>Alan Turing</name>
+    </author>
+    <arxiv:primary_category term="cs.IR"/>
+    <category term="cs.IR"/>
+    <category term="cs.LG"/>
+    <link href="http://arxiv.org/abs/2401.12345v1" rel="alternate" type="text/html"/>
+    <link href="http://arxiv.org/pdf/2401.12345v1.pdf" rel="related" type="application/pdf"/>
+    <arxiv:doi>10.48550/arXiv.2401.12345</arxiv:doi>
+  </entry>
+</feed>
