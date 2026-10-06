@@ -3,6 +3,7 @@ name = "karanverse-research-lab-backend"
 version = "0.1.0"
 description = "Personal AI Research Lab — backend API"
 readme = "README.md"
+license = "MIT"
 requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.115.0",

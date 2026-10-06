@@ -465,4 +465,4 @@ Settings use Pydantic Settings and read from environment variables (see `.env.ex
 
 ## License
 
-Private research project — add a license when you are ready to share.
+This project is licensed under the [MIT License](LICENSE).
