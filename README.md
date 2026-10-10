@@ -42,9 +42,7 @@ Instead of repeatedly searching or manually re-reading the same PDFs, you can ru
 
 ### Dashboard and example queries
 
-The **Dashboard** shows how many research runs you have saved, graph connectivity, and **recent questions** you can reopen—use it as a launch pad for the queries below.
-
-![Dashboard — research run count and recent example queries](docs/screenshots/dashboard.png)
+The **Dashboard** shows how many research runs you have saved, graph connectivity, and **recent questions** you can reopen—use it as a launch pad for the queries below. See the [UI tour](#ui-tour) composite for Dashboard, Research, Graph, History, and Evaluation in one view.
 
 | # | Use case | Example query (paste into **Research**) |
 |---|----------|----------------------------------------|
@@ -219,51 +217,21 @@ The same capabilities are exposed as **REST** (`/research`, `/research/stream` S
 | Knowledge graph UI | — | Neo4j + `NEO4J_ENABLED=true` |
 | Tracing | — | Langfuse keys + `LANGFUSE_ENABLED=true` |
 
-## UI tour (screenshots)
+## UI tour
 
-Screenshots live in [`docs/screenshots/`](docs/screenshots/). They are meant to show **real demo data** for this lab—profile and learning notes from [`data/personal/portfolio_seed.json`](data/personal/portfolio_seed.json), plus your saved research runs—not empty placeholders.
+One composite view of the Next.js dashboard ([`docs/screenshots/ui-overview.jpg`](docs/screenshots/ui-overview.jpg)). Demo data includes portfolio seed notes, saved research runs, and retrieval evaluation—see [`docs/VISION_AND_DEMO.md`](docs/VISION_AND_DEMO.md). Refresh local data with `./scripts/seed_demo_data.sh` before recapturing.
 
-**Who it’s for and how to refresh data:** see [`docs/VISION_AND_DEMO.md`](docs/VISION_AND_DEMO.md). Run `./scripts/seed_demo_data.sh` before capturing; you can **edit or replace** any PNG in `docs/screenshots/` (keep filenames) or regenerate from `npm run dev` on port 3000.
+![karanVerse Research Lab — Dashboard, Research, Knowledge graph, History, and Evaluation](docs/screenshots/ui-overview.jpg)
 
-### Dashboard
+| Panel | What it shows |
+|-------|----------------|
+| **Dashboard** | Research run count, knowledge graph status, quick actions, and **recent example queries** (aligned with the [query table](#dashboard-and-example-queries) above). |
+| **Research** | Deep research on a question (e.g. Graph RAG vs Agentic RAG), source toggles, live pipeline progress, retrieved papers, and related concepts. |
+| **Knowledge graph** | Force-directed links between concepts, papers, projects, and tools; node detail with definitions and connections. |
+| **History** | Saved runs with tags, dates, and links to full reports and updates. |
+| **Evaluation** | Retrieval benchmark results (BM25, dense, hybrid, rerank) from `scripts/run_retrieval_eval.py`—metrics such as Recall@10, MRR, and nDCG. |
 
-Overview of research run count, graph status, **Start new research**, and **recent example queries** from `data/research_history/` (same questions as the table in [What you can do with it](#dashboard-and-example-queries)).
-
-![Dashboard — recent research questions and run count](docs/screenshots/dashboard.png)
-
-### Research workspace
-
-Ask a lab-aligned question (e.g. hybrid retrieval + agentic workflows), choose **stream** or **guided** mode, then run planner → literature search → hybrid retrieval → critic → synthesizer.
-
-![Research workspace](docs/screenshots/research.png)
-
-### Research record (history detail)
-
-A saved run’s executive summary, findings, evidence excerpts, and open questions.
-
-![Research record](docs/screenshots/research-detail.png)
-
-### Knowledge
-
-Scoped search over **personal notes and project docs** (portfolio seed) and public corpus. Example: *What have I learned about Graph RAG?* infers personal/project scopes and surfaces learning notes from the seed.
-
-### Graph
-
-Force-directed view from research history + ingested chunks (filters by node type and source). Neo4j is optional.
-
-![Knowledge graph](docs/screenshots/graph.png)
-
-### History
-
-All persisted runs with objectives, timestamps, and links to full reports.
-
-![Research history](docs/screenshots/history.png)
-
-### Evaluation
-
-Upload `report.json` from `scripts/run_retrieval_eval.py` to compare BM25, dense, hybrid, rerank, and agentic metrics.
-
-![Evaluation](docs/screenshots/evaluation.png)
+**Knowledge** (scoped search and gap detection) uses the same corpus and scopes as the graph; open it from the sidebar when running the app locally.
 
 ## Repository layout
 

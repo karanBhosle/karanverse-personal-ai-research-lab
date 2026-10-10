@@ -55,8 +55,7 @@ Then open the UI, run the example searches above, and capture pages.
 
 Yes—you can change them in two ways:
 
-1. **Replace PNGs** in [`docs/screenshots/`](screenshots/) (any image editor or new browser capture). Keep filenames so [`README.md`](../README.md) links stay valid:
-   - `research.png`, `research-detail.png`, `knowledge.png`, `graph.png`, `history.png`, `evaluation.png`
+1. **Replace the composite** [`docs/screenshots/ui-overview.jpg`](screenshots/ui-overview.jpg) (or add per-page PNGs if you split the README tour again).
 2. **Regenerate from the running app** (recommended so data matches seed + history):
    - Start API + frontend (see root README).
    - Seed portfolio (above).
