@@ -24,6 +24,165 @@ It is designed for a single researcher or small lab—not multi-tenant SaaS—ru
 | Retrieval quality | **Evaluation framework** (BM25, dense, hybrid, rerank, agentic) with standard IR metrics |
 | Trust and safety | Private knowledge is **not** sent to external LLMs or literature APIs unless you opt in via env + API flags |
 
+## What you can do with it
+
+**karanVerse Research Lab** is an AI-powered research assistant for investigating complex topics, analyzing papers, grounding answers in **your** documents and projects, connecting related concepts, and preserving knowledge across sessions—not a one-off chat.
+
+Instead of repeatedly searching or manually re-reading the same PDFs, you can run structured research, compare technical approaches, surface knowledge gaps, benchmark retrieval, and turn findings into cited reports and next steps.
+
+| Capability in this repo | How it helps |
+|-------------------------|--------------|
+| Full research workflow (`/research`, UI **Research** page) | Plan → OpenAlex/arXiv + local hybrid retrieval → critic → synthesizer with citations |
+| Research history + detail views | Save runs under `data/research_history/`; reopen reports in **History** |
+| Research update | Revisit a topic and diff new evidence against a prior report |
+| Knowledge search + gaps (`/knowledge`) | Scoped search over personal/project/public corpora; LLM gap analysis |
+| Retrieval evaluation (`scripts/run_retrieval_eval.py`, **Evaluation** UI) | Compare BM25, dense, hybrid, rerank, agentic strategies on a dataset |
+| Knowledge graph UI (`/graph`) | Explore links between questions, concepts, papers, and project docs from history + index |
+| Portfolio seed (`data/personal/portfolio_seed.json`) | Demo personal/project knowledge aligned with your lab narrative |
+
+### Dashboard and example queries
+
+The **Dashboard** shows how many research runs you have saved, graph connectivity, and **recent questions** you can reopen—use it as a launch pad for the queries below.
+
+![Dashboard — research run count and recent example queries](docs/screenshots/dashboard.png)
+
+| # | Use case | Example query (paste into **Research**) |
+|---|----------|----------------------------------------|
+| 1 | Compare RAG architectures | I'm building a financial document intelligence system. Should I use Hybrid RAG, Graph RAG, or Agentic RAG? |
+| 2 | Improve your projects | Analyze my existing GenAI projects. Where can I introduce MCP, Graph RAG, or better evaluation mechanisms? |
+| 3 | Agentic RAG evaluation | Agentic RAG papers? |
+| 4 | Lab design | How should my personal research lab combine hybrid retrieval with agentic workflows? |
+| 5 | Update prior research | Update my research on production-ready RAG architectures. What has changed since my previous report? |
+| 6 | Learning roadmap | Based on my research and projects, what should I learn next to improve my expertise in production Agentic AI? |
+| 7 | Retrieval benchmarks | Design an experiment to compare BM25, dense retrieval, hybrid retrieval, and reranking on a suitable public dataset. |
+| 8 | Concept map | How can RAG, MCP, LangGraph, and knowledge graphs work together in a production AI research system? |
+| 9 | Business brief | Research how AI agents can improve contact center operations. Compare architectures, risks, and propose a proof of concept. |
+
+### 1. Research technologies before using them
+
+Evaluate frameworks and architectures before you adopt them in production.
+
+> **Example query**
+>
+> I'm building a financial document intelligence system. Should I use Hybrid RAG, Graph RAG, or Agentic RAG?
+
+**What you can do:**
+
+- Pull relevant papers (OpenAlex, arXiv) and local technical notes.
+- Compare architectures, complexity, latency, and cost in a structured plan.
+- Read evidence excerpts and numbered citations in the final report.
+- See what the critic flags as missing and iterate (configurable `max_iterations`).
+
+**Expected output:** A research report with executive summary, key findings, evidence panel, citations, and open questions.
+
+### 2. Analyze your existing projects and documentation
+
+Explore project docs, notes, and research materials indexed with `PERSONAL_KNOWLEDGE` / `PROJECT` scopes.
+
+> **Example query**
+>
+> Analyze my existing GenAI projects. Where can I introduce MCP, Graph RAG, or better evaluation mechanisms?
+
+**What you can do:**
+
+- Search portfolio and project markdown ingested via `POST /knowledge/import/portfolio` or text ingest.
+- Combine personal corpus with literature search when scopes and guards allow.
+- Generate improvement ideas tied to retrieved chunks (not generic model memory).
+
+**Expected output:** A cited report and chunk-level evidence referencing your indexed documents.
+
+### 3. Build and reuse persistent research memory
+
+Preserve conclusions, evidence, and unresolved questions so later sessions build on earlier work.
+
+> **First session**
+>
+> Research the best ways to evaluate Agentic RAG systems.
+
+> **Later session**
+>
+> Continue my previous research on Agentic RAG evaluation and investigate the remaining gaps.
+
+Enable **Use prior research history as planner context** in the Research UI (or `use_research_history` on the API). The planner sees relevant snippets from past runs—not full report dumps.
+
+**Expected output:** New runs stored as JSON history; planner-aware follow-ups without starting from zero.
+
+### 4. Track new developments and update prior conclusions
+
+Revisit a topic when literature or your corpus changes.
+
+> **Example query**
+>
+> Update my research on production-ready RAG architectures. What has changed since my previous report?
+
+Use the **research update** flow (API: research update endpoints; compares claims and evidence overlap with a stored run).
+
+**Expected output:** An update-oriented report: new findings, what still holds, what may need revision, and suggested next steps.
+
+### 5. Identify knowledge gaps and learning roadmaps
+
+See what your indexed knowledge and history do **not** yet cover.
+
+> **Example query**
+>
+> Based on my research and projects, what should I learn next to improve my expertise in production Agentic AI?
+
+Run **Detect gaps** on the **Knowledge** page (`POST /knowledge/gaps`) with a focus question.
+
+**Expected output:** Gap list with topics, reasons, related concepts, supporting runs, and recommended learning priorities.
+
+### 6. Design and evaluate technical experiments
+
+Compare retrieval strategies with measurable IR metrics instead of gut feel.
+
+> **Example query**
+>
+> Design an experiment to compare BM25, dense retrieval, hybrid retrieval, and reranking on a suitable public dataset.
+
+Use `data/evaluation/sample_dataset.json` (or your own), then:
+
+```bash
+python scripts/run_retrieval_eval.py --help
+```
+
+Upload the generated `report.json` in the **Evaluation** UI.
+
+**Expected output:** Strategy comparison tables (precision, recall, MRR, nDCG, etc.) and a reproducible eval harness.
+
+### 7. Discover connections between papers, concepts, and projects
+
+Explore how ideas link across literature and your lab.
+
+> **Example query**
+>
+> How can RAG, MCP, LangGraph, and knowledge graphs work together in a production AI research system?
+
+Use the **Graph** explorer: query, filters by node/source type, click nodes for evidence and linked history.
+
+**Expected output:** An interactive graph materialized from research history and processed chunks (optional Neo4j backend for advanced graph storage).
+
+### 8. Generate research briefs for real-world problems
+
+Turn a business or product question into an evidence-backed brief.
+
+> **Example query**
+>
+> Research how AI agents can improve contact center operations. Compare architectures, risks, and propose a proof of concept.
+
+The same workflow produces problem framing, architecture options grounded in retrieved evidence, risks called out by the critic, and open questions for a phased PoC.
+
+**Expected output:** A structured report suitable for technical stakeholders—not unsourced bullet points from a generic chat.
+
+### Overall value
+
+The lab unifies **literature search**, **local RAG**, **multi-agent critique and synthesis**, **persistent history**, **gap analysis**, **retrieval benchmarks**, and **graph exploration** in one workspace.
+
+Continuous workflow:
+
+**Ask a question → investigate evidence → generate a cited report → save history → connect knowledge → revisit and update conclusions.**
+
+Outputs depend on what you configure: LLM provider (`.env`), ingested documents, optional Qdrant for dense vectors, optional Langfuse tracing, and optional Neo4j.
+
 ### End-to-end research workflow (backend)
 
 ```text
@@ -68,9 +227,9 @@ Screenshots live in [`docs/screenshots/`](docs/screenshots/). They are meant to 
 
 ### Dashboard
 
-Overview of research run count, graph status, quick link to start research, and **recent history** from `data/research_history/`.
+Overview of research run count, graph status, **Start new research**, and **recent example queries** from `data/research_history/` (same questions as the table in [What you can do with it](#dashboard-and-example-queries)).
 
-![Dashboard](docs/screenshots/dashboard.png)
+![Dashboard — recent research questions and run count](docs/screenshots/dashboard.png)
 
 ### Research workspace
 
